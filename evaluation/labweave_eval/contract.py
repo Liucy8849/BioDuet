@@ -12,7 +12,7 @@ NAMES = ("state.read evidence.submit metadata.revise qc.record pair.confirm "
          "job.request receipt.record access.change handoff.record operation.inspect "
          "approval.revoke verification.record").split()
 REGISTRY = {f"A{i:02}": {"name": name, "version": "a1", "status":
-            "implemented_engineering_subset" if i in (1, 3, 19) else "not_implemented"}
+            "implemented_engineering_subset" if i in (1, 3, 11, 16, 19) else "not_implemented"}
             for i, name in enumerate(NAMES, 1)}
 
 class Rejection(Exception):
@@ -107,6 +107,10 @@ def validate_request(req):
         exact(req, base | {"target"})
         ref(req["target"])
         exact(req["payload"], ())
+        return
+    if aid in ("A11", "A16"):
+        from .async_contract import validate_async_request
+        validate_async_request(req, base)
         return
     exact(req, base | {"target", "operation_id", "idempotency_key", "expected_versions", "input_refs", "evidence_refs", "provenance"})
     ref(req["target"])
