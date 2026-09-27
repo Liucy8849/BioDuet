@@ -1,6 +1,4 @@
 """Narrow research-action/0.1 engineering profile; no third-party dependencies."""
-import hashlib
-import json
 import re
 from uuid import UUID
 
@@ -24,46 +22,20 @@ def reject_if(condition, code="SCHEMA_INVALID"):
     if condition:
         raise Rejection(code)
 
-def _pairs(pairs):
-    result = {}
-    for key, value in pairs:
-        reject_if(key in result)
-        result[key] = value
-    return result
-
 def strict_loads(raw):
+    from .canonical import strict_json_loads
     try:
-        result = json.loads(raw, object_pairs_hook=_pairs,
-                            parse_constant=lambda _: (_ for _ in ()).throw(Rejection("SCHEMA_INVALID")))
-        validate_json(result)
-        return result
+        return strict_json_loads(raw)
     except (ValueError, TypeError, RecursionError) as exc:
-        raise Rejection("SCHEMA_INVALID") from exc
+        raise Rejection('SCHEMA_INVALID') from exc
 
 def validate_json(value):
-    if isinstance(value, str):
-        try:
-            value.encode("utf-8")
-        except UnicodeEncodeError as exc:
-            raise Rejection("SCHEMA_INVALID") from exc
-        return
-    if value is None or isinstance(value, bool):
-        return
-    if isinstance(value, int):
-        reject_if(abs(value) > 9007199254740991)
-        return
-    if isinstance(value, list):
-        for item in value:
-            validate_json(item)
-        return
-    if isinstance(value, dict):
-        reject_if(any(not isinstance(k, str) for k in value))
-        for item in value.values():
-            validate_json(item)
-        return
-    # First fixture profile has no floating point fields. Scientific numeric
-    # schemas and cross-language float canonicalization are deliberately pending.
-    raise Rejection("SCHEMA_INVALID")
+    from .canonical import canonical_text
+    try:
+        canonical_text(value)
+    except (ValueError, TypeError, RecursionError) as exc:
+        raise Rejection('SCHEMA_INVALID') from exc
+
 
 def exact(value, fields):
     reject_if(not isinstance(value, dict) or set(value) != set(fields))
@@ -136,8 +108,5 @@ def validate_request(req):
     text(req["provenance"]["source_ref"])
 
 def request_hash(req, principal_id):
-    fields = ("contract_version", "project_id", "action", "target", "expected_versions", "input_refs", "evidence_refs", "payload", "provenance")
-    content = {k: req[k] for k in fields}
-    content["principal_id"] = principal_id
-    encoded = json.dumps(content, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode("utf-8")
-    return hashlib.sha256(encoded).hexdigest()
+    from .canonical import semantic_digest
+    return semantic_digest(req, principal_id)['sha256']
