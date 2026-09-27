@@ -20,4 +20,6 @@
 
 ## R1→R2 映射边界
 
+阶段规则由用户确认的 [ADR-0003](../../decisions/ADR-0003-parallel-development-gates.md) 更新：共享最小契约后框架/基础设施/接入并行；真实科学样例另经适用审查，正式全量任务在R4前冻结。任务卡正文与签字未因路线重排而改变。
+
 卡片使用逻辑 action ID，非现有 API 已实现声明。R2 映射现有 capability/gateway、workflow operation、分析 run 与 artifact 时，须核对现有作用域和提交事务。既有 invocation/workflow 幂等键、outbox 消费归属、可变 report 等与目标契约有差异；不能字段改名即视为等价。固定回放用于工程确定性检查，互动赛道用于双控；两者结果分报。公开生物数据与模拟过程分别标来源。
