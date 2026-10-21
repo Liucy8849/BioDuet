@@ -2,7 +2,7 @@
 
 Separate profile, not an implementation of the public research-action contract.
 The trusted runner owns the clock and context. In-process projections are not
-an OS sandbox. Real participant transports and scientific actions remain absent.
+an OS sandbox. Scientific actions live in the separate scientific world module.
 """
 from copy import deepcopy
 import json
@@ -46,7 +46,7 @@ class LogicalSession:
 
     world.advance(tick), observe(actor), available_actions(actor), execute(actor,
     request) use a single trusted clock. A real adapter must preserve this port.
-    Only scripted regression is supported by this initial runner.
+    Participant decisions may come from replay or separately isolated model adapters.
     """
     def __init__(self, world, *, deadline=80, max_turns=80):
         self.world = world
@@ -69,11 +69,12 @@ class LogicalSession:
             raise RuntimeError('TURN_PENDING')
         if self.terminal is not None:
             return None
-        if self.seq >= self.max_turns:
-            self.terminal = 'budget_exhausted'
-            return None
+        # The last allowed action may finish the last participant.
         if not self.ready:
             self.terminal = 'participants_finished'
+            return None
+        if self.seq >= self.max_turns:
+            self.terminal = 'budget_exhausted'
             return None
         actor = min(self.ready, key=lambda a: (self.ready[a], self.served[a], a))
         self.tick = max(self.tick, self.ready[actor])
@@ -89,7 +90,7 @@ class LogicalSession:
             available_actions = self.world.available_actions(actor)
             stage = 'packet_validation'
             packet = safe_copy({
-                'profile': PROFILE, 'episode_id': self.episode_id, 'actor': actor, 'tick': self.tick,
+                'profile': getattr(self.world, 'profile', PROFILE), 'episode_id': self.episode_id, 'actor': actor, 'tick': self.tick,
                 'turn_token': f'{self.episode_id}:{actor}:{self.seq}',
                 'observation': observation,
                 'available_actions': available_actions,

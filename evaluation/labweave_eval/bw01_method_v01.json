@@ -1,0 +1,70 @@
+{
+  "schema": "bw01-method-spec/1",
+  "method_id": "bw01-paired-edger-ql/0.1",
+  "status": "development_candidate_pending_scientific_review",
+  "dataset": "GSE96583 batch2 (GSM2560248/GSM2560249)",
+  "cell_type": "CD14+ Monocytes",
+  "selection": {
+    "annotation": "published cell labels",
+    "multiplets": "singlet",
+    "min_cells_per_donor_condition": 20
+  },
+  "aggregation": "sum integer counts within donor x condition x selected cell type",
+  "replication_unit": "donor",
+  "design": "~ donor_id + condition",
+  "contrast": "stim-control",
+  "filtering": {
+    "function": "edgeR::filterByExpr",
+    "min_count": 10,
+    "min_total_count": 15,
+    "large_n": 10,
+    "min_prop": 0.7
+  },
+  "normalization": "TMM",
+  "dispersion": {
+    "function": "estimateDisp",
+    "robust": false
+  },
+  "model": {
+    "function": "glmQLFit",
+    "legacy": true,
+    "robust": false
+  },
+  "test": "glmQLFTest",
+  "multiplicity": "BH across all retained genes in this one cell type",
+  "reported_fdr_threshold": 0.05,
+  "tolerances": {
+    "absolute": 1e-8,
+    "relative": 0.000001
+  },
+  "prerequisites": [
+    "all source hashes matched",
+    "barcode mapping verified",
+    "at least two complete independent donor pairs",
+    "runtime package versions locked",
+    "independent raw aggregation agrees",
+    "independent numerical reference agrees"
+  ],
+  "evidence_separation": {
+    "real": "public expression counts and published donor/cell annotations",
+    "simulated": "scientist certificates, initial transcription error, world actions"
+  },
+  "limitations": [
+    "Published cell labels are reused; annotation accuracy is not evaluated.",
+    "The condition contrast is within donors; condition-associated processing effects cannot be ruled out by this benchmark.",
+    "Reference agreement tests the specified method, not universal biological truth.",
+    "No formal score or scientific completion before independent method review."
+  ],
+  "references": [
+    {
+      "url": "https://bioconductor.org/packages/release/bioc/vignettes/glmGamPoi/inst/doc/pseudobulk.html",
+      "version": "page dated 2026-04-28; accessed 2026-10-19",
+      "location": "sections 1 and 2; Kang18_8vs8 donor/condition example"
+    },
+    {
+      "url": "https://bioconductor.org/packages/devel/bioc/vignettes/edgeR/inst/doc/edgeRUsersGuide.pdf",
+      "version": "online guide accessed 2026-10-19; runtime library must be separately pinned",
+      "location": "section 3.4.1 Paired samples"
+    }
+  ]
+}
