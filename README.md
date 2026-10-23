@@ -1,9 +1,10 @@
 # BioDuet
 
-Engineering prerelease candidate derived from reviewed LabWeave commit
+Engineering prerelease derived from reviewed LabWeave commit
 `b50a8377413785218bc2a3c956d9a0b60d0fb669`. Independent engineering validation covers 81 distinct tests, installed-package
-H0/H1 examples and a website build. See [validation](docs/validation.md) for
-the selective rerun history and remaining website qualification limits.
+H0/H1 examples, a Node 22.15.0 website build and all 13 selected browser cases.
+See [validation](docs/validation.md) for the selective qualification history and
+scientific limits.
 BioDuet maintains benchmark contracts and scoring. LabWeave is a participating
 system and maintains its own deployment adapter, pinned to a BioDuet release.
 

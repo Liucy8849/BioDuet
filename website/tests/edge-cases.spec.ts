@@ -61,7 +61,7 @@ test("untrusted message text is escaped and sparse event sequences navigate corr
 });
 test("accessibility checks on all five views and mobile horizontal layout", async ({
   page,
-}) => {
+}, testInfo) => {
   const results = [];
   for (const suffix of [
     "page=results",
@@ -81,7 +81,7 @@ test("accessibility checks on all five views and mobile horizontal layout", asyn
     results.push({ page: suffix, violations: report.violations });
   }
   fs.writeFileSync(
-    path.resolve("../../.local/qa/benchmark-website/accessibility.json"),
+    testInfo.outputPath("accessibility.json"),
     JSON.stringify(results, null, 2),
   );
   expect(

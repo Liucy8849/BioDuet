@@ -5,7 +5,13 @@ Failures were retained: missing ensurepip in the initial system Python; old repo
 
 Both installed CLI examples completed as simulated_replay with zero model calls. No R analysis, native Agent, real-model evaluation or scientific score was performed. Formal/strict scores remain null.
 
-Website installation and build succeeded on observed Node 20.19.5. The declared requirement is >=22.15.0 and engine warnings remain in the evidence. This is not validation on the declared Node version. Portable browser configuration is a subsequent change awaiting browser qualification.
+The initial website installation and build used Node 20.19.5; its engine warnings are retained. Subsequent isolated validation used the official pinned Node 22.15.0 binary and the existing Chromium runtime. The declared version gate, TypeScript/Vue type checking, production build and demo-data integrity checks all passed. Twelve browser cases passed in that invocation; the remaining accessibility/mobile case initially failed because its report used a legacy repository-relative output path.
+
+The report now uses Playwright testInfo.outputPath. A selective attempt then found no tests because an anchored filter incorrectly assumed a leaf-only test title; that attempt is retained as a failure and is not counted as a test pass. With the corrected full-title suffix filter, the one remaining case passed in 8.7 seconds: all five views had zero reported accessibility violations and all five mobile horizontal-layout assertions completed. The accepted browser set is 12 + 1 = 13 distinct cases, not 13 repeated full runs. Previously passing core tests, builds and browser cases were not repeated for these repairs.
+
+The three website scopes were independently checked: each leader exited, its process group/cgroup was empty, and host mount information matched. This does not resolve the earlier core scope's unrecorded mount difference. The final website qualification receipt has SHA256 17e677f71ed1ec96b993ab27bd95ce996415664c8c875a082092b5d845ff5e63.
+
+The distributed Python wheel is the exact previously qualified artifact, not a later untested rebuild: bioduet_benchmark-0.1.0a1-py3-none-any.whl, SHA256 a8b18fa6adc7595849f4de68ba0587df8fbe2d7f576dea814b37e49941bdc6f0. Its 65 packaged source files match the qualified source, and all 71 RECORD entries were checked. Later website-test and validation-document edits do not change the Python package sources.
 
 The final scope leader was reaped, its cgroup was empty/gone, and host mount information matched. An earlier scope reported different mount information; before/after bytes were not retained, so the cause cannot be established retrospectively. That observation is not upgraded to a clean result.
 
