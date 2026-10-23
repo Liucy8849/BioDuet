@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite the exact BioDuet release and commit used."
+title: "BioDuet"
+type: software
+version: "0.1.0a1"
+authors:
+  - name: "Liucy8849"
+license: Apache-2.0
+repository-code: "https://github.com/Liucy8849/BioDuet"

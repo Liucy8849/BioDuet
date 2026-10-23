@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bioduet-benchmark"
+version = "0.1.0a1"
+description = "Dual-control benchmark contracts and explicitly synthetic engineering examples"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+dependencies = []
+
+[project.scripts]
+bioduet = "bioduet.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+labweave_eval = ["*.R", "*.json"]

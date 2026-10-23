@@ -1,0 +1,507 @@
+{
+  "schema": "bioduet-portable-split/1",
+  "baseline": "b50a8377413785218bc2a3c956d9a0b60d0fb669",
+  "files": [
+    {
+      "original": "evaluation/labweave_eval/__init__.py",
+      "destination": "src/labweave_eval/__init__.py",
+      "original_sha256": "b8351a88720d6f9f54a75a72c2b5705c3c44e501114446ef97c5e4eabbea3463",
+      "sha256": "b8351a88720d6f9f54a75a72c2b5705c3c44e501114446ef97c5e4eabbea3463",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/async_contract.py",
+      "destination": "src/labweave_eval/async_contract.py",
+      "original_sha256": "afc9f622e83726064c48c2f13e9e05f413fa4eb494b41d4ada10e1b0d079841e",
+      "sha256": "afc9f622e83726064c48c2f13e9e05f413fa4eb494b41d4ada10e1b0d079841e",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_budget_v01.py",
+      "destination": "src/labweave_eval/bioduet_budget_v01.py",
+      "original_sha256": "8adae3621a645c6e4dd0ac4fcae1fff480f9930a142967a342ff02430a16b06f",
+      "sha256": "8adae3621a645c6e4dd0ac4fcae1fff480f9930a142967a342ff02430a16b06f",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_budget_v02.py",
+      "destination": "src/labweave_eval/bioduet_budget_v02.py",
+      "original_sha256": "1b91be75d44997165d80049e7f65760f3e6ee259dbfd18eeac4e6e3458b614cc",
+      "sha256": "1b91be75d44997165d80049e7f65760f3e6ee259dbfd18eeac4e6e3458b614cc",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_bundle_v01.py",
+      "destination": "src/labweave_eval/bioduet_bundle_v01.py",
+      "original_sha256": "2067d5f42372d6b4a9f9dbe237021467ebc60cac609e9a05070e12cd08b091da",
+      "sha256": "72e39a3007fa74a2f6f20908e756d505fcbfd716bb43a93dd9a81b00b02675e0",
+      "changed": true
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_bundle_v02.py",
+      "destination": "src/labweave_eval/bioduet_bundle_v02.py",
+      "original_sha256": "142ff3e888abcd4edcee512d2bd96883b24dca12d07bd05133a61c954f0ea71d",
+      "sha256": "8311519735d33e6ec36fdac8cf97de67b6cdb4366efd94a8b0e7ed5965a1e7b6",
+      "changed": true
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_bw01_projection_v01.py",
+      "destination": "src/labweave_eval/bioduet_bw01_projection_v01.py",
+      "original_sha256": "db9f1b3742f1dd8e323b18e8ffb0d317e30e326542590cf1c7fda6a8a6dae1fc",
+      "sha256": "db9f1b3742f1dd8e323b18e8ffb0d317e30e326542590cf1c7fda6a8a6dae1fc",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_consequence_v01.py",
+      "destination": "src/labweave_eval/bioduet_consequence_v01.py",
+      "original_sha256": "bf4c7a92ae16f26651847909361b40ef7617d0f91c367be43a3dbe5eb57fb23b",
+      "sha256": "bf4c7a92ae16f26651847909361b40ef7617d0f91c367be43a3dbe5eb57fb23b",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_evidence_v01.py",
+      "destination": "src/labweave_eval/bioduet_evidence_v01.py",
+      "original_sha256": "d6ce42bc3a1a31b0c7b772e9ff6e1c9e2366680113b00685e2b76801da878e27",
+      "sha256": "d6ce42bc3a1a31b0c7b772e9ff6e1c9e2366680113b00685e2b76801da878e27",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_fake_provider_v01.py",
+      "destination": "src/labweave_eval/bioduet_fake_provider_v01.py",
+      "original_sha256": "8ed8cb16dcef195706f1810b1e5cdfa0880af74da13c511189ff946ba8ecc0a9",
+      "sha256": "b123bca0bdb98c059181326e69031bf2c662a9c71bd0eeba8c34111ec49a0cd4",
+      "changed": true
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_journal_v01.py",
+      "destination": "src/labweave_eval/bioduet_journal_v01.py",
+      "original_sha256": "3dc2034053605926fbc0cca2a55b8d9d1b940bba1d5e5781ff825b21f6d25722",
+      "sha256": "3dc2034053605926fbc0cca2a55b8d9d1b940bba1d5e5781ff825b21f6d25722",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_journal_v02.py",
+      "destination": "src/labweave_eval/bioduet_journal_v02.py",
+      "original_sha256": "9b3df4f3b4672a0785806b195bd926259e1c8a227f75cbe7c31aa28e1cd2f795",
+      "sha256": "9b3df4f3b4672a0785806b195bd926259e1c8a227f75cbe7c31aa28e1cd2f795",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_logical_v02.py",
+      "destination": "src/labweave_eval/bioduet_logical_v02.py",
+      "original_sha256": "f01ee70ebd4b02c2b38e759ac8f83b780da8945a8e79f97f59307b46827a0294",
+      "sha256": "f01ee70ebd4b02c2b38e759ac8f83b780da8945a8e79f97f59307b46827a0294",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_mcp_v01.py",
+      "destination": "src/labweave_eval/bioduet_mcp_v01.py",
+      "original_sha256": "7c77ed128aad7817e5afd40726b2717a2c14cb9e82d1a30e1eff4f76907a1734",
+      "sha256": "7c77ed128aad7817e5afd40726b2717a2c14cb9e82d1a30e1eff4f76907a1734",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_model_calls_v01.py",
+      "destination": "src/labweave_eval/bioduet_model_calls_v01.py",
+      "original_sha256": "b38d77e117888f6c6dce40606dc89900cb6308a0311aebba20721e9f1fdf16e4",
+      "sha256": "30c1d6e40c8bec6d43f9a47ef83ac90cd93e697fa39a3acd1c98b91530e32796",
+      "changed": true
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_model_calls_v02.py",
+      "destination": "src/labweave_eval/bioduet_model_calls_v02.py",
+      "original_sha256": "9a3300e17e14517de3190ff8245e4021af5c41dbcceb9d1a46cd6c0c9d8d2c67",
+      "sha256": "3bb0d425283200538f985dc004335ae092f9c15f160676d262bbaef8b141694c",
+      "changed": true
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_native_adaptation_v01.py",
+      "destination": "src/labweave_eval/bioduet_native_adaptation_v01.py",
+      "original_sha256": "15f5d597bfdd8e8752c434ca00ad29bed63f9ae1afe618f96ad2161cc2515a36",
+      "sha256": "15f5d597bfdd8e8752c434ca00ad29bed63f9ae1afe618f96ad2161cc2515a36",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_native_bridge_v01.py",
+      "destination": "src/labweave_eval/bioduet_native_bridge_v01.py",
+      "original_sha256": "767d7d8da2f1810de526bb2e29b5f66644f41a685df2159142b3a96bffc43cb7",
+      "sha256": "767d7d8da2f1810de526bb2e29b5f66644f41a685df2159142b3a96bffc43cb7",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_prehistory_v01.py",
+      "destination": "src/labweave_eval/bioduet_prehistory_v01.py",
+      "original_sha256": "2c2d7eb1e72ee58323b37c33df089c60606f58cbf62a6073d33b22039ea5f91f",
+      "sha256": "46ff135685bd25b329d76794700616b4983e74715c233b929a2a893afb0daeab",
+      "changed": true
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_process_cleanup_v01.py",
+      "destination": "src/labweave_eval/bioduet_process_cleanup_v01.py",
+      "original_sha256": "6cf3e9716e68315edb8f0c5badf24dee1d46412e998b130d1b6eab0a1396ad8e",
+      "sha256": "6cf3e9716e68315edb8f0c5badf24dee1d46412e998b130d1b6eab0a1396ad8e",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_recovery_episode_v01.py",
+      "destination": "src/labweave_eval/bioduet_recovery_episode_v01.py",
+      "original_sha256": "5a5210b20905ff03180ee590f9ea157ed647366ffc75add0899e90f54dcc725e",
+      "sha256": "7d8f2f0e634ed30eb7b4723d6ee0ddd9167d764b16e7c3819660724897bf7416",
+      "changed": true
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_recovery_evaluation_v01.py",
+      "destination": "src/labweave_eval/bioduet_recovery_evaluation_v01.py",
+      "original_sha256": "b4acddab5e88ae76eacf3e2a03a3d550fd36cbcb59ee9725faa6bc9c495bb324",
+      "sha256": "8cb8731eb7c2b3221082fcb7d52c9fe2ef4352fbdf624233ef42345b894524b8",
+      "changed": true
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_recovery_evaluation_v02.py",
+      "destination": "src/labweave_eval/bioduet_recovery_evaluation_v02.py",
+      "original_sha256": "e0e67a8c92b34f89a03540ea17eef5f169e1bce1b0283b9e36cdb76324b4356c",
+      "sha256": "4187e1a7b367fd6f142c4b59be8849dff0a400fba9d45c9c4a7219bc65d1fb8b",
+      "changed": true
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_recovery_oracle_v01.py",
+      "destination": "src/labweave_eval/bioduet_recovery_oracle_v01.py",
+      "original_sha256": "51c9be07751c0b72bf12016d482c4359b201610fb2b143d599ce8a069ce4e55e",
+      "sha256": "0569d4e48a219d34354a4415123597eeb03b08b8671ef29543c762dfc18be3cd",
+      "changed": true
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_recovery_participant_v01.py",
+      "destination": "src/labweave_eval/bioduet_recovery_participant_v01.py",
+      "original_sha256": "609de7ea00c41cbb45ee3608a5da403cab80d36286aeb149950d6bf3a6934cef",
+      "sha256": "609de7ea00c41cbb45ee3608a5da403cab80d36286aeb149950d6bf3a6934cef",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_recovery_preparation_v01.py",
+      "destination": "src/labweave_eval/bioduet_recovery_preparation_v01.py",
+      "original_sha256": "6f91e08c86e9f8d232e1e74d62bd428a3a29aa57b4a7810dc74391caee5d8f21",
+      "sha256": "6f91e08c86e9f8d232e1e74d62bd428a3a29aa57b4a7810dc74391caee5d8f21",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_recovery_world_v01.py",
+      "destination": "src/labweave_eval/bioduet_recovery_world_v01.py",
+      "original_sha256": "f25637a2b7b4b88d406c12266c236c11e1896c0c60223e491e31f63725d008ca",
+      "sha256": "252d10557684847791907ddc8e82ddbb4c5c16c43300336552d0da7c992561e9",
+      "changed": true
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_recovery_world_v02.py",
+      "destination": "src/labweave_eval/bioduet_recovery_world_v02.py",
+      "original_sha256": "99a00215cacebc4bf1340e913483356cd8c415f325b9d43313eafd89b2af7501",
+      "sha256": "6cd322d85776081594b212b8888321ff64d4a372c9a66d139ff98d2fbc748368",
+      "changed": true
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_reference_v02.py",
+      "destination": "src/labweave_eval/bioduet_reference_v02.py",
+      "original_sha256": "f8ce8fb00df43b74cb559e9a75e3583ca65ef965e562a9bed3f6415ebb6e8488",
+      "sha256": "f8ce8fb00df43b74cb559e9a75e3583ca65ef965e562a9bed3f6415ebb6e8488",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_research_stdio_v01.mjs",
+      "destination": "src/labweave_eval/bioduet_research_stdio_v01.mjs",
+      "original_sha256": "03b94f2f8a29667a24532ee057570c62be5c5c062ae5330eee193f6e757e73cc",
+      "sha256": "03b94f2f8a29667a24532ee057570c62be5c5c062ae5330eee193f6e757e73cc",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_retrospective_v01.py",
+      "destination": "src/labweave_eval/bioduet_retrospective_v01.py",
+      "original_sha256": "6f8495cee62a9cd4ea770642cf2c748e126ea0b2acb1b0c16eb736979c4a69d3",
+      "sha256": "ffa0ee55f9265431b0ab95374bf009ca0d724cc08941270d4471b6e83859543d",
+      "changed": true
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_science_v02.py",
+      "destination": "src/labweave_eval/bioduet_science_v02.py",
+      "original_sha256": "0421ea8c1455af54db508fb6fe03bf4f1f5b8fbe96e09f6ec4b2221abb24db6f",
+      "sha256": "0421ea8c1455af54db508fb6fe03bf4f1f5b8fbe96e09f6ec4b2221abb24db6f",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_scientific_review_v01.py",
+      "destination": "src/labweave_eval/bioduet_scientific_review_v01.py",
+      "original_sha256": "74621bec8971f9ef16940e270d27279cbe2a0f75ed1d1887e7698e9698cff990",
+      "sha256": "9aa3f82645a414ff9fb3bc6cdc7332d7ef92a3e25a98c36639016a1f84d8be94",
+      "changed": true
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_scoring_v01.py",
+      "destination": "src/labweave_eval/bioduet_scoring_v01.py",
+      "original_sha256": "7f8564d574fefea68c027249114f14cde5738db14424374fc13e236374fd4c2a",
+      "sha256": "c99a83664d7b0083906898e94fcddfd3b29eb1e7177dab0d1c14e17ca09b4b86",
+      "changed": true
+    },
+    {
+      "original": "evaluation/labweave_eval/bioduet_world_port_v02.py",
+      "destination": "src/labweave_eval/bioduet_world_port_v02.py",
+      "original_sha256": "e49c04cd190ba84bdae87cd0ff16e5ff8e27db8dab30ef56135ad9de212b501e",
+      "sha256": "e49c04cd190ba84bdae87cd0ff16e5ff8e27db8dab30ef56135ad9de212b501e",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_aggregate_check_v01.py",
+      "destination": "src/labweave_eval/bw01_aggregate_check_v01.py",
+      "original_sha256": "a345595bb05a56ed38c45217226be98587a024f168f018e483d0ccc125f76e6c",
+      "sha256": "a345595bb05a56ed38c45217226be98587a024f168f018e483d0ccc125f76e6c",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_artifacts_v01.py",
+      "destination": "src/labweave_eval/bw01_artifacts_v01.py",
+      "original_sha256": "3358ef6c8cfa1eac4aa536628675f9193af36a1a3a1c70e9aae1a027688ee63d",
+      "sha256": "3358ef6c8cfa1eac4aa536628675f9193af36a1a3a1c70e9aae1a027688ee63d",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_data_v01.py",
+      "destination": "src/labweave_eval/bw01_data_v01.py",
+      "original_sha256": "c2ce1a0d39aadac5bf39db4693bff3319612b3d26b23c35e7dea9b5ae67610cb",
+      "sha256": "c2ce1a0d39aadac5bf39db4693bff3319612b3d26b23c35e7dea9b5ae67610cb",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_edger_v01.R",
+      "destination": "src/labweave_eval/bw01_edger_v01.R",
+      "original_sha256": "d8a7913ccbef39dce4305378818c9416f87438a9973ffbd18600f6c7bf84950b",
+      "sha256": "d8a7913ccbef39dce4305378818c9416f87438a9973ffbd18600f6c7bf84950b",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_environment_v01.py",
+      "destination": "src/labweave_eval/bw01_environment_v01.py",
+      "original_sha256": "21e8e16b98a52e268081c5053dd2642f610a19651b125105a80368e40d360c41",
+      "sha256": "21e8e16b98a52e268081c5053dd2642f610a19651b125105a80368e40d360c41",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_episode_v01.py",
+      "destination": "src/labweave_eval/bw01_episode_v01.py",
+      "original_sha256": "8694f92958db458a248a87ada3e1f578857b43c2583fb02fb6758679f3ad33e6",
+      "sha256": "8694f92958db458a248a87ada3e1f578857b43c2583fb02fb6758679f3ad33e6",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_episode_v02.py",
+      "destination": "src/labweave_eval/bw01_episode_v02.py",
+      "original_sha256": "9bee1583c4229649e5ac95e77a0a72b0dc6f520cb1b216a78fd4a49780a2e600",
+      "sha256": "9bee1583c4229649e5ac95e77a0a72b0dc6f520cb1b216a78fd4a49780a2e600",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_evaluation_v01.py",
+      "destination": "src/labweave_eval/bw01_evaluation_v01.py",
+      "original_sha256": "1ce259ad164b36e589067b7a430fcf4e639ac8b2c7438878fc51ebcc36e4a26f",
+      "sha256": "1ce259ad164b36e589067b7a430fcf4e639ac8b2c7438878fc51ebcc36e4a26f",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_fixtures_v01.py",
+      "destination": "src/labweave_eval/bw01_fixtures_v01.py",
+      "original_sha256": "a979f9029595f82cc786b897d76494b470562ed6350c85862099fbd486eec12e",
+      "sha256": "a979f9029595f82cc786b897d76494b470562ed6350c85862099fbd486eec12e",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_logical_v01.py",
+      "destination": "src/labweave_eval/bw01_logical_v01.py",
+      "original_sha256": "baad558a04907dc2744348b40773a1043cd78c33a7555c712d4e4d359e4903de",
+      "sha256": "baad558a04907dc2744348b40773a1043cd78c33a7555c712d4e4d359e4903de",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_method_v01.json",
+      "destination": "src/labweave_eval/bw01_method_v01.json",
+      "original_sha256": "ff8d186b71f40f96bbc91999a289bf247136e4575cb98f91b40cf63017c60f26",
+      "sha256": "ff8d186b71f40f96bbc91999a289bf247136e4575cb98f91b40cf63017c60f26",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_oracle_v01.py",
+      "destination": "src/labweave_eval/bw01_oracle_v01.py",
+      "original_sha256": "cb304d990a59778e3e871fe97c31063295afa6ca4816d0bfd24045b07016e8fb",
+      "sha256": "cb304d990a59778e3e871fe97c31063295afa6ca4816d0bfd24045b07016e8fb",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_participant_v01.py",
+      "destination": "src/labweave_eval/bw01_participant_v01.py",
+      "original_sha256": "c590b7b7d453b59b824fcc75d2ea5afe58aae0f401628061ce8c3ff13f6e29c7",
+      "sha256": "c590b7b7d453b59b824fcc75d2ea5afe58aae0f401628061ce8c3ff13f6e29c7",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_participant_v02.py",
+      "destination": "src/labweave_eval/bw01_participant_v02.py",
+      "original_sha256": "37ca62b73ceac52ef4b8fbdba8b7af61859d68a066409a20214f4e4fe7ea1ac3",
+      "sha256": "37ca62b73ceac52ef4b8fbdba8b7af61859d68a066409a20214f4e4fe7ea1ac3",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_protocol_diagnostic_v01.py",
+      "destination": "src/labweave_eval/bw01_protocol_diagnostic_v01.py",
+      "original_sha256": "d14cfc21df547cef10366b13c3f13377a9b8cfbf865cb318f2126ad300cba246",
+      "sha256": "d14cfc21df547cef10366b13c3f13377a9b8cfbf865cb318f2126ad300cba246",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_reference_aggregate_v01.R",
+      "destination": "src/labweave_eval/bw01_reference_aggregate_v01.R",
+      "original_sha256": "c7c52bfbc0b7682f44d18d96174dc7f716b36c0494e10ca3b783c1398a210820",
+      "sha256": "c7c52bfbc0b7682f44d18d96174dc7f716b36c0494e10ca3b783c1398a210820",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_reference_runner_v01.py",
+      "destination": "src/labweave_eval/bw01_reference_runner_v01.py",
+      "original_sha256": "4c559b307b1d2f4d113adc878780071c3bcf1cadc6420c272dc2d933685b4757",
+      "sha256": "4c559b307b1d2f4d113adc878780071c3bcf1cadc6420c272dc2d933685b4757",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_reference_v01.R",
+      "destination": "src/labweave_eval/bw01_reference_v01.R",
+      "original_sha256": "d29f25cb828aea289397be242369519228f9997d180cc55cd7f36e8ed1a01231",
+      "sha256": "d29f25cb828aea289397be242369519228f9997d180cc55cd7f36e8ed1a01231",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_result_view_v01.py",
+      "destination": "src/labweave_eval/bw01_result_view_v01.py",
+      "original_sha256": "c860b4495bf4b279e1606cb1d8c658aa04de370e521e2057a550e93f4fc3a787",
+      "sha256": "c860b4495bf4b279e1606cb1d8c658aa04de370e521e2057a550e93f4fc3a787",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_science_v01.py",
+      "destination": "src/labweave_eval/bw01_science_v01.py",
+      "original_sha256": "065b4340edd398d569bafc0f13d8ceceb3bb6f063fa5c335de7b885a18cde857",
+      "sha256": "065b4340edd398d569bafc0f13d8ceceb3bb6f063fa5c335de7b885a18cde857",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_science_world_v01.py",
+      "destination": "src/labweave_eval/bw01_science_world_v01.py",
+      "original_sha256": "1d0d62d6069ea88e37f42ce89029244c616d20bf319078eb5fcfc68a685e3990",
+      "sha256": "1d0d62d6069ea88e37f42ce89029244c616d20bf319078eb5fcfc68a685e3990",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_science_world_v02.py",
+      "destination": "src/labweave_eval/bw01_science_world_v02.py",
+      "original_sha256": "82b8dfea2df8af49c256a93812e0a58a2c57b45974677f2973fb6658c704e5b0",
+      "sha256": "82b8dfea2df8af49c256a93812e0a58a2c57b45974677f2973fb6658c704e5b0",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/bw01_world_port_v01.py",
+      "destination": "src/labweave_eval/bw01_world_port_v01.py",
+      "original_sha256": "5ba7b1f22ef23f92ff70b4f0a18c657d42f0e1ee0efa87432313c6640f45d226",
+      "sha256": "5ba7b1f22ef23f92ff70b4f0a18c657d42f0e1ee0efa87432313c6640f45d226",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/canonical.py",
+      "destination": "src/labweave_eval/canonical.py",
+      "original_sha256": "1be37f2136a1eeec36952fd4de5a172e661c13f8839458b4f295aa24ae92b251",
+      "sha256": "1be37f2136a1eeec36952fd4de5a172e661c13f8839458b4f295aa24ae92b251",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/contract.py",
+      "destination": "src/labweave_eval/contract.py",
+      "original_sha256": "776c6b9c0da89bd84b598ddde234b8c1873c1c61cc9b94c67c8cb1232d0f4eeb",
+      "sha256": "776c6b9c0da89bd84b598ddde234b8c1873c1c61cc9b94c67c8cb1232d0f4eeb",
+      "changed": false
+    },
+    {
+      "original": "evaluation/labweave_eval/world_port.py",
+      "destination": "src/labweave_eval/world_port.py",
+      "original_sha256": "1915117218735030787ab3f24049d867fca6d7048964dac8a35f8b388cda1d1b",
+      "sha256": "1915117218735030787ab3f24049d867fca6d7048964dac8a35f8b388cda1d1b",
+      "changed": false
+    }
+  ],
+  "excluded_host_modules": [
+    "bioduet_biomni_entry_v01",
+    "bioduet_channels_v01",
+    "bioduet_native_runtime_v01",
+    "bioduet_native_runtime_v02",
+    "bioduet_opencode_entry_v01",
+    "bioduet_provider_journal_v01",
+    "bioduet_provider_transport_v01",
+    "bioduet_provider_transport_v02",
+    "bioduet_recovery_cli_v01",
+    "bioduet_recovery_cli_v02",
+    "bioduet_role_boot_v01",
+    "bioduet_role_boot_v02",
+    "bioduet_role_process_v01",
+    "bioduet_role_process_v02",
+    "bioduet_role_worker_v01",
+    "bioduet_runtime_limits_v01",
+    "bioduet_window_v01",
+    "bioduet_window_v02",
+    "bw01_cli_v01",
+    "bw01_process_v01",
+    "bw01_process_v02",
+    "bw01_role_boot_v01",
+    "bw01_role_boot_v02",
+    "bw01_role_worker_v01",
+    "bw01_role_worker_v02",
+    "bw01_science_cli_v01",
+    "bw01_science_cli_v02",
+    "bw01_science_cli_v03",
+    "bw01_science_cli_v04"
+  ],
+  "integrity_helpers": [
+    "digest_file",
+    "encoded",
+    "need",
+    "pinned",
+    "save",
+    "sha",
+    "strict"
+  ],
+  "kept_tests": [
+    "test_bioduet_discriminator_v01.py",
+    "test_bioduet_projection_v01.py",
+    "test_bioduet_recovery_preparation_v01.py",
+    "test_bw01_error_boundary_v01.py",
+    "test_bw01_logical_v01.py",
+    "test_bw01_participant_v01.py",
+    "test_bw01_protocol_diagnostic_v01.py",
+    "test_bw01_result_view_v01.py",
+    "test_bw01_role_admission_v01.py",
+    "test_bw01_science_v01.py"
+  ],
+  "deferred_host_tests": [
+    "test_bioduet_actual_failure_v01.py",
+    "test_bioduet_brokered_entry_v01.py",
+    "test_bioduet_integration_v01.py",
+    "test_bioduet_method_scoring_v01.py",
+    "test_bioduet_no_cap_outer_transport_v01.py",
+    "test_bioduet_no_cap_world_port_v01.py",
+    "test_bioduet_retrospective_v01.py",
+    "test_bioduet_runnable_hardening_v01.py",
+    "test_bioduet_runnable_v01.py",
+    "test_bw01_aggregate_evidence_v01.py",
+    "test_bw01_environment_v01.py",
+    "test_bw01_human_envelope_v02.py",
+    "test_bw01_lineage_revision_v01.py",
+    "test_bw01_portable_v01.py",
+    "test_bw01_science_runner_v02.py",
+    "test_bw01_science_world_v01.py",
+    "test_bioduet_evaluation_cli_v01.py",
+    "test_bioduet_recovery_evaluation_v01.py"
+  ],
+  "execution_validation": "pending",
+  "static_revision": "02: remove legacy shared CLI routing tests; original candidate01 preserved"
+}

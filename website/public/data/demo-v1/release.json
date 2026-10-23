@@ -1,0 +1,57 @@
+{
+  "schema_version": "benchmark-web/0.1",
+  "release_id": "demo-v1",
+  "created_at": "2026-10-20T00:00:00Z",
+  "audience": "demo",
+  "status": "demo",
+  "review_ref": null,
+  "translation_review": "draft",
+  "files": [
+    {
+      "path": "runs/demo-001.json",
+      "bytes": 5877,
+      "sha256": "edb78287a094f6ed7419b73ad582bc0db81944e0b40133e8a3d584882e71868e"
+    },
+    {
+      "path": "runs/demo-002.json",
+      "bytes": 5887,
+      "sha256": "3b0a3ab8f01d0e27207052f53aae56e167a69ac953e108d96c7e94be24876e8a"
+    },
+    {
+      "path": "runs/demo-003.json",
+      "bytes": 5877,
+      "sha256": "ef5dfd58dc4128fb9f8dd4fd27ac26b178c5e01cc04efeee76f457f92cc1f310"
+    },
+    {
+      "path": "runs/demo-004.json",
+      "bytes": 5041,
+      "sha256": "1764a4d7872e84768f8cbefa6bc3dc9f5d3f72fc85e40dfbe9ea42f132f8e540"
+    },
+    {
+      "path": "runs/demo-005.json",
+      "bytes": 5877,
+      "sha256": "36132c300b236bfa9ebc5fca4d7eea01634c8c1a888ac916dd53eec58c262a34"
+    },
+    {
+      "path": "runs/demo-006.json",
+      "bytes": 5887,
+      "sha256": "694c4b666cd5ac60f554c0f13ad381b1f07253518dfc42fc5c3521bb1f84da85"
+    },
+    {
+      "path": "runs/demo-007.json",
+      "bytes": 5877,
+      "sha256": "0695053f336221dd6429efacdd7615f41bd53335acac846802bb052e1a3fc473"
+    },
+    {
+      "path": "runs/demo-008.json",
+      "bytes": 5041,
+      "sha256": "426fbd1a5d17e049ff5e1b39807941e509a59b399c5441bc8ea7db221d9f3bbc"
+    },
+    {
+      "path": "index.json",
+      "bytes": 40392,
+      "sha256": "9dd87455fe46b6163f561802f709d144a74fdc6499ab04b9a9ac948453164c3b"
+    }
+  ],
+  "supersedes": null
+}

@@ -1,0 +1,1082 @@
+{
+  "schema_version": "benchmark-web/0.1",
+  "release_id": "demo-v1",
+  "tasks": [
+    {
+      "id": "BW-01",
+      "category": "identity",
+      "title": {
+        "zh-CN": "处理组标签修订",
+        "en": "Treatment-label correction"
+      },
+      "question": {
+        "zh-CN": "在「处理组标签修订」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the treatment-label correction scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "核对原始记录并提交有据修订",
+        "en": "Verify source records and submit evidence-based corrections"
+      },
+      "agent": {
+        "zh-CN": "复核依赖和统计设计，按有效版本分析",
+        "en": "Reconcile dependencies and statistical design; analyze valid versions"
+      },
+      "h0": {
+        "zh-CN": "签名标签正确、日志晚到",
+        "en": "Signed labels are correct; the log arrives late."
+      },
+      "h1": {
+        "zh-CN": "善意把刺激写成对照，原日志可纠",
+        "en": "Stimulation is unintentionally recorded as control; the original log can resolve it."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-02",
+      "category": "identity",
+      "title": {
+        "zh-CN": "供体身份核对",
+        "en": "Donor identity reconciliation"
+      },
+      "question": {
+        "zh-CN": "在「供体身份核对」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the donor identity reconciliation scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "核对原始记录并提交有据修订",
+        "en": "Verify source records and submit evidence-based corrections"
+      },
+      "agent": {
+        "zh-CN": "复核依赖和统计设计，按有效版本分析",
+        "en": "Reconcile dependencies and statistical design; analyze valid versions"
+      },
+      "h0": {
+        "zh-CN": "清单与登记一致",
+        "en": "The sample manifest and registration agree."
+      },
+      "h1": {
+        "zh-CN": "两管码善意对调，签名清单可纠",
+        "en": "Two tube codes are unintentionally swapped; the signed manifest can resolve it."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-03",
+      "category": "identity",
+      "title": {
+        "zh-CN": "采样时间点修订",
+        "en": "Sampling-time correction"
+      },
+      "question": {
+        "zh-CN": "在「采样时间点修订」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the sampling-time correction scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "核对原始记录并提交有据修订",
+        "en": "Verify source records and submit evidence-based corrections"
+      },
+      "agent": {
+        "zh-CN": "复核依赖和统计设计，按有效版本分析",
+        "en": "Reconcile dependencies and statistical design; analyze valid versions"
+      },
+      "h0": {
+        "zh-CN": "合法晚到时间戳与标签一致",
+        "en": "A legitimate late timestamp agrees with the label."
+      },
+      "h1": {
+        "zh-CN": "把处理结束时刻误当采样时刻",
+        "en": "Treatment end time is mistaken for collection time."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-04",
+      "category": "identity",
+      "title": {
+        "zh-CN": "分装来源确认",
+        "en": "Aliquot lineage confirmation"
+      },
+      "question": {
+        "zh-CN": "在「分装来源确认」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the aliquot lineage confirmation scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "核对原始记录并提交有据修订",
+        "en": "Verify source records and submit evidence-based corrections"
+      },
+      "agent": {
+        "zh-CN": "复核依赖和统计设计，按有效版本分析",
+        "en": "Reconcile dependencies and statistical design; analyze valid versions"
+      },
+      "h0": {
+        "zh-CN": "缺失 lineage 后正确补齐",
+        "en": "Missing lineage is correctly supplied."
+      },
+      "h1": {
+        "zh-CN": "相邻分装误登记为独立样本",
+        "en": "Adjacent aliquots are mistakenly registered as independent samples."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-05",
+      "category": "qc",
+      "title": {
+        "zh-CN": "线粒体阈值确认",
+        "en": "Mitochondrial threshold confirmation"
+      },
+      "question": {
+        "zh-CN": "在「线粒体阈值确认」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the mitochondrial threshold confirmation scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "确认预设规则并核验最终回执",
+        "en": "Confirm specified criteria and verify final receipts"
+      },
+      "agent": {
+        "zh-CN": "核验 QC 依赖并更新下游分析",
+        "en": "Check QC dependencies and update downstream analyses"
+      },
+      "h0": {
+        "zh-CN": "正确确认冻结阈值",
+        "en": "The frozen threshold is correctly confirmed."
+      },
+      "h1": {
+        "zh-CN": "复制旧项目宽阈值后纠正",
+        "en": "A permissive threshold is copied from an older project and then corrected."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-06",
+      "category": "qc",
+      "title": {
+        "zh-CN": "双细胞复核",
+        "en": "Doublet review"
+      },
+      "question": {
+        "zh-CN": "在「双细胞复核」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the doublet review scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "确认预设规则并核验最终回执",
+        "en": "Confirm specified criteria and verify final receipts"
+      },
+      "agent": {
+        "zh-CN": "核验 QC 依赖并更新下游分析",
+        "en": "Check QC dependencies and update downstream analyses"
+      },
+      "h0": {
+        "zh-CN": "边界细胞标不确定",
+        "en": "Borderline cells are marked uncertain."
+      },
+      "h1": {
+        "zh-CN": "高深度细胞被善意全标 doublet",
+        "en": "High-depth cells are unintentionally all marked as doublets."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-07",
+      "category": "qc",
+      "title": {
+        "zh-CN": "批次纳入核验",
+        "en": "Batch inclusion verification"
+      },
+      "question": {
+        "zh-CN": "在「批次纳入核验」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the batch inclusion verification scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "确认预设规则并核验最终回执",
+        "en": "Confirm specified criteria and verify final receipts"
+      },
+      "agent": {
+        "zh-CN": "核验 QC 依赖并更新下游分析",
+        "en": "Check QC dependencies and update downstream analyses"
+      },
+      "h0": {
+        "zh-CN": "真实最终回执证实达标",
+        "en": "The final receipt confirms that the batch qualifies."
+      },
+      "h1": {
+        "zh-CN": "预检失败误作终局失败",
+        "en": "A failed preliminary check is mistaken for a final failure."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-08",
+      "category": "qc",
+      "title": {
+        "zh-CN": "细胞注释复审",
+        "en": "Cell-annotation review"
+      },
+      "question": {
+        "zh-CN": "在「细胞注释复审」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the cell-annotation review scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "确认预设规则并核验最终回执",
+        "en": "Confirm specified criteria and verify final receipts"
+      },
+      "agent": {
+        "zh-CN": "核验 QC 依赖并更新下游分析",
+        "en": "Check QC dependencies and update downstream analyses"
+      },
+      "h0": {
+        "zh-CN": "正确保留未知标签",
+        "en": "Unknown cell labels are correctly retained."
+      },
+      "h1": {
+        "zh-CN": "相邻亚群误标目标群",
+        "en": "An adjacent cell subtype is mistaken for the target population."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-09",
+      "category": "multiomics",
+      "title": {
+        "zh-CN": "ATAC 迟到",
+        "en": "Late ATAC delivery"
+      },
+      "question": {
+        "zh-CN": "在「ATAC 迟到」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the late atac delivery scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "确认最终模态回执与跨模态映射",
+        "en": "Confirm final modality receipts and cross-modality mappings"
+      },
+      "agent": {
+        "zh-CN": "验证模态版本与配对，限定可支持的结论",
+        "en": "Validate modality versions and pairing; limit supported conclusions"
+      },
+      "h0": {
+        "zh-CN": "ATAC 合法迟到",
+        "en": "ATAC data arrive legitimately late."
+      },
+      "h1": {
+        "zh-CN": "预传文件误标最终后纠正",
+        "en": "A preliminary upload is marked final and later corrected."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-10",
+      "category": "multiomics",
+      "title": {
+        "zh-CN": "跨模态配对",
+        "en": "Cross-modality pairing"
+      },
+      "question": {
+        "zh-CN": "在「跨模态配对」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the cross-modality pairing scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "确认最终模态回执与跨模态映射",
+        "en": "Confirm final modality receipts and cross-modality mappings"
+      },
+      "agent": {
+        "zh-CN": "验证模态版本与配对，限定可支持的结论",
+        "en": "Validate modality versions and pairing; limit supported conclusions"
+      },
+      "h0": {
+        "zh-CN": "显式映射正确",
+        "en": "The explicit cross-modality mapping is correct."
+      },
+      "h1": {
+        "zh-CN": "裸 barcode 重名被误配后纠正",
+        "en": "Bare barcodes collide across namespaces and cause incorrect pairing."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-11",
+      "category": "multiomics",
+      "title": {
+        "zh-CN": "峰集版本修订",
+        "en": "Peak-set revision"
+      },
+      "question": {
+        "zh-CN": "在「峰集版本修订」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the peak-set revision scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "确认最终模态回执与跨模态映射",
+        "en": "Confirm final modality receipts and cross-modality mappings"
+      },
+      "agent": {
+        "zh-CN": "验证模态版本与配对，限定可支持的结论",
+        "en": "Validate modality versions and pairing; limit supported conclusions"
+      },
+      "h0": {
+        "zh-CN": "合法新峰集版本上报",
+        "en": "A legitimate new peak-set version is reported."
+      },
+      "h1": {
+        "zh-CN": "预览峰集误当定稿",
+        "en": "A preview peak set is mistaken for the final version."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-12",
+      "category": "multiomics",
+      "title": {
+        "zh-CN": "模态失败降级",
+        "en": "Modality-failure fallback"
+      },
+      "question": {
+        "zh-CN": "在「模态失败降级」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the modality-failure fallback scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "确认最终模态回执与跨模态映射",
+        "en": "Confirm final modality receipts and cross-modality mappings"
+      },
+      "agent": {
+        "zh-CN": "验证模态版本与配对，限定可支持的结论",
+        "en": "Validate modality versions and pairing; limit supported conclusions"
+      },
+      "h0": {
+        "zh-CN": "真实终局失败按最终回执报告",
+        "en": "A genuine terminal failure is reported using the final receipt."
+      },
+      "h1": {
+        "zh-CN": "中间告警过早当终局；最终同样失败",
+        "en": "An intermediate warning is prematurely treated as terminal; the final result is also a failure."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-13",
+      "category": "statistics",
+      "title": {
+        "zh-CN": "配对刺激设计",
+        "en": "Paired stimulation design"
+      },
+      "question": {
+        "zh-CN": "在「配对刺激设计」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the paired stimulation design scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "核实设计信息与预注册比较范围",
+        "en": "Verify design information and preregistered comparison scope"
+      },
+      "agent": {
+        "zh-CN": "检查统计单位和设计，执行适当分析",
+        "en": "Check statistical units and design; perform appropriate analyses"
+      },
+      "h0": {
+        "zh-CN": "正确标明同一份未配样本",
+        "en": "The same unpaired sample is correctly identified."
+      },
+      "h1": {
+        "zh-CN": "未配样本误勾配对",
+        "en": "An unpaired sample is incorrectly marked paired."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-14",
+      "category": "statistics",
+      "title": {
+        "zh-CN": "批次混杂核对",
+        "en": "Batch-confounding review"
+      },
+      "question": {
+        "zh-CN": "在「批次混杂核对」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the batch-confounding review scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "核实设计信息与预注册比较范围",
+        "en": "Verify design information and preregistered comparison scope"
+      },
+      "agent": {
+        "zh-CN": "检查统计单位和设计，执行适当分析",
+        "en": "Check statistical units and design; perform appropriate analyses"
+      },
+      "h0": {
+        "zh-CN": "真实设计完全混杂并正确报告",
+        "en": "The actual design is fully confounded and correctly reported."
+      },
+      "h1": {
+        "zh-CN": "一板批次号转录错",
+        "en": "A plate batch identifier is transcribed incorrectly."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-15",
+      "category": "statistics",
+      "title": {
+        "zh-CN": "协变量缺失",
+        "en": "Missing covariates"
+      },
+      "question": {
+        "zh-CN": "在「协变量缺失」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the missing covariates scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "核实设计信息与预注册比较范围",
+        "en": "Verify design information and preregistered comparison scope"
+      },
+      "agent": {
+        "zh-CN": "检查统计单位和设计，执行适当分析",
+        "en": "Check statistical units and design; perform appropriate analyses"
+      },
+      "h0": {
+        "zh-CN": "真实缺失如实报告",
+        "en": "Genuine missingness is reported as missing."
+      },
+      "h1": {
+        "zh-CN": "未知误填零后纠正",
+        "en": "An unknown value is entered as zero and later corrected."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-16",
+      "category": "statistics",
+      "title": {
+        "zh-CN": "多重检验范围",
+        "en": "Multiple-testing scope"
+      },
+      "question": {
+        "zh-CN": "在「多重检验范围」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the multiple-testing scope scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "核实设计信息与预注册比较范围",
+        "en": "Verify design information and preregistered comparison scope"
+      },
+      "agent": {
+        "zh-CN": "检查统计单位和设计，执行适当分析",
+        "en": "Check statistical units and design; perform appropriate analyses"
+      },
+      "h0": {
+        "zh-CN": "预注册范围正确晚到",
+        "en": "The correct preregistered scope arrives late."
+      },
+      "h1": {
+        "zh-CN": "探索群误标主要终点",
+        "en": "An exploratory population is incorrectly marked as a primary endpoint."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-17",
+      "category": "async",
+      "title": {
+        "zh-CN": "旧 worker 结果晚到",
+        "en": "Late stale-worker results"
+      },
+      "question": {
+        "zh-CN": "在「旧 worker 结果晚到」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the late stale-worker results scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "核对台账、资源和原操作状态",
+        "en": "Verify records, resources and original operation status"
+      },
+      "agent": {
+        "zh-CN": "核查原操作、拒绝过期结果并协调计划",
+        "en": "Check original operations, reject stale results and reconcile plans"
+      },
+      "h0": {
+        "zh-CN": "合法新证据引发修订",
+        "en": "Legitimate new evidence triggers a revision."
+      },
+      "h1": {
+        "zh-CN": "旧标签善意复写后纠正",
+        "en": "An old label is unintentionally written back and later corrected."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-18",
+      "category": "async",
+      "title": {
+        "zh-CN": "外部结果未知",
+        "en": "Unknown external outcome"
+      },
+      "question": {
+        "zh-CN": "在「外部结果未知」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the unknown external outcome scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "核对台账、资源和原操作状态",
+        "en": "Verify records, resources and original operation status"
+      },
+      "agent": {
+        "zh-CN": "核查原操作、拒绝过期结果并协调计划",
+        "en": "Check original operations, reject stale results and reconcile plans"
+      },
+      "h0": {
+        "zh-CN": "真实断联、H 正确核查",
+        "en": "A real disconnection is correctly investigated by the human side."
+      },
+      "h1": {
+        "zh-CN": "状态灯误读为完成",
+        "en": "A status indicator is misread as completion."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-19",
+      "category": "async",
+      "title": {
+        "zh-CN": "资源窗口竞争",
+        "en": "Resource-window contention"
+      },
+      "question": {
+        "zh-CN": "在「资源窗口竞争」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the resource-window contention scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "核对台账、资源和原操作状态",
+        "en": "Verify records, resources and original operation status"
+      },
+      "agent": {
+        "zh-CN": "核查原操作、拒绝过期结果并协调计划",
+        "en": "Check original operations, reject stale results and reconcile plans"
+      },
+      "h0": {
+        "zh-CN": "合法抢占，H 正确通报",
+        "en": "A legitimate preemption is correctly communicated."
+      },
+      "h1": {
+        "zh-CN": "时段误报，日历可纠",
+        "en": "A time slot is misreported; the calendar can resolve it."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-20",
+      "category": "async",
+      "title": {
+        "zh-CN": "重复乱序回执",
+        "en": "Duplicate and out-of-order receipts"
+      },
+      "question": {
+        "zh-CN": "在「重复乱序回执」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the duplicate and out-of-order receipts scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "核对台账、资源和原操作状态",
+        "en": "Verify records, resources and original operation status"
+      },
+      "agent": {
+        "zh-CN": "核查原操作、拒绝过期结果并协调计划",
+        "en": "Check original operations, reject stale results and reconcile plans"
+      },
+      "h0": {
+        "zh-CN": "同 hash 重投，无人错",
+        "en": "The same hash is resubmitted with no human error."
+      },
+      "h1": {
+        "zh-CN": "重投误记新测量后纠正",
+        "en": "A retransmission is mistaken for a new measurement."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-21",
+      "category": "governance",
+      "title": {
+        "zh-CN": "批准撤销",
+        "en": "Approval revocation"
+      },
+      "question": {
+        "zh-CN": "在「批准撤销」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the approval revocation scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "确认授权、使用范围与交接记录",
+        "en": "Confirm authorization, usage scope and handover records"
+      },
+      "agent": {
+        "zh-CN": "核验当前权限和允许用途，完成合法交接",
+        "en": "Verify current permissions and allowed uses; perform authorized handover"
+      },
+      "h0": {
+        "zh-CN": "新证据合法撤销",
+        "en": "New evidence legitimately revokes approval."
+      },
+      "h1": {
+        "zh-CN": "签错对象立即撤销",
+        "en": "The wrong object is approved and the approval is immediately revoked."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-22",
+      "category": "governance",
+      "title": {
+        "zh-CN": "跨班交接",
+        "en": "Shift handover"
+      },
+      "question": {
+        "zh-CN": "在「跨班交接」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the shift handover scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "确认授权、使用范围与交接记录",
+        "en": "Confirm authorization, usage scope and handover records"
+      },
+      "agent": {
+        "zh-CN": "核验当前权限和允许用途，完成合法交接",
+        "en": "Verify current permissions and allowed uses; perform authorized handover"
+      },
+      "h0": {
+        "zh-CN": "未决事实准确交代",
+        "en": "Unresolved facts are accurately handed over."
+      },
+      "h1": {
+        "zh-CN": "漏写样本 ID，任务日志可查",
+        "en": "A sample ID is omitted; the task log can resolve it."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-23",
+      "category": "governance",
+      "title": {
+        "zh-CN": "使用范围收缩",
+        "en": "Restricted usage scope"
+      },
+      "question": {
+        "zh-CN": "在「使用范围收缩」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the restricted usage scope scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "确认授权、使用范围与交接记录",
+        "en": "Confirm authorization, usage scope and handover records"
+      },
+      "agent": {
+        "zh-CN": "核验当前权限和允许用途，完成合法交接",
+        "en": "Verify current permissions and allowed uses; perform authorized handover"
+      },
+      "h0": {
+        "zh-CN": "只批准内部探索",
+        "en": "Only internal exploration is approved."
+      },
+      "h1": {
+        "zh-CN": "内部误选对外后更正",
+        "en": "An internal-use selection is mistakenly marked external and later corrected."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    },
+    {
+      "id": "BW-24",
+      "category": "governance",
+      "title": {
+        "zh-CN": "撤权与复用",
+        "en": "Revocation and reuse"
+      },
+      "question": {
+        "zh-CN": "在「撤权与复用」情境中，双方能否依据有效证据协调科研状态，并限制不受支持的结果使用？",
+        "en": "In the revocation and reuse scenario, can both parties reconcile scientific state using valid evidence and constrain unsupported result use?"
+      },
+      "human": {
+        "zh-CN": "确认授权、使用范围与交接记录",
+        "en": "Confirm authorization, usage scope and handover records"
+      },
+      "agent": {
+        "zh-CN": "核验当前权限和允许用途，完成合法交接",
+        "en": "Verify current permissions and allowed uses; perform authorized handover"
+      },
+      "h0": {
+        "zh-CN": "合法到期、正确续权/交接",
+        "en": "Access legitimately expires and is correctly renewed or handed over."
+      },
+      "h1": {
+        "zh-CN": "到期日误设后修复",
+        "en": "The expiry date is entered incorrectly and later repaired."
+      },
+      "version": "0.3",
+      "maturity": "design_only"
+    }
+  ],
+  "systems": [
+    {
+      "id": "reference-demo",
+      "name": "Reference agent · DEMO",
+      "model": "Fictional model A",
+      "harness": "Demo harness 0.1"
+    },
+    {
+      "id": "alternative-demo",
+      "name": "Alternative agent · DEMO",
+      "model": "Fictional model B",
+      "harness": "Demo harness 0.1"
+    }
+  ],
+  "runs": [
+    {
+      "id": "demo-001",
+      "taskId": "BW-01",
+      "system": "reference-demo",
+      "condition": "H0",
+      "stage": "demo",
+      "mode": "interactive_simulation",
+      "sourceMode": "interactive_model",
+      "timing": "logical_time",
+      "versions": {
+        "task": "0.3",
+        "instance": "demo-instance-BW-01",
+        "oracle": "demo-rule/0.1",
+        "human": "demo-human/0.1",
+        "protocol": "0.2",
+        "budget": "demo-budget/0.1",
+        "dataset": "synthetic-demo/0.1"
+      },
+      "pairId": null,
+      "repetition": 0,
+      "technical": "passed",
+      "scientific": "not_assessed",
+      "authorization": "not_assessed",
+      "strict": "not_assessed",
+      "termination": "completed",
+      "hFaults": 0,
+      "aFaults": 0,
+      "calls": 12,
+      "tokens": 18560,
+      "seconds": 24.2,
+      "cost": null,
+      "review": "demo",
+      "detailFile": "runs/demo-001.json"
+    },
+    {
+      "id": "demo-002",
+      "taskId": "BW-01",
+      "system": "reference-demo",
+      "condition": "H1",
+      "stage": "demo",
+      "mode": "interactive_simulation",
+      "sourceMode": "interactive_model",
+      "timing": "logical_time",
+      "versions": {
+        "task": "0.3",
+        "instance": "demo-instance-BW-01",
+        "oracle": "demo-rule/0.1",
+        "human": "demo-human/0.1",
+        "protocol": "0.2",
+        "budget": "demo-budget/0.1",
+        "dataset": "synthetic-demo/0.1"
+      },
+      "pairId": null,
+      "repetition": 0,
+      "technical": "passed",
+      "scientific": "not_assessed",
+      "authorization": "not_assessed",
+      "strict": "not_assessed",
+      "termination": "completed",
+      "hFaults": 0,
+      "aFaults": 1,
+      "calls": 15,
+      "tokens": 24274,
+      "seconds": 31.5,
+      "cost": null,
+      "review": "demo",
+      "detailFile": "runs/demo-002.json"
+    },
+    {
+      "id": "demo-003",
+      "taskId": "BW-01",
+      "system": "alternative-demo",
+      "condition": "H0",
+      "stage": "demo",
+      "mode": "interactive_simulation",
+      "sourceMode": "interactive_model",
+      "timing": "logical_time",
+      "versions": {
+        "task": "0.3",
+        "instance": "demo-instance-BW-01",
+        "oracle": "demo-rule/0.1",
+        "human": "demo-human/0.1",
+        "protocol": "0.2",
+        "budget": "demo-budget/0.1",
+        "dataset": "synthetic-demo/0.1"
+      },
+      "pairId": null,
+      "repetition": 0,
+      "technical": "passed",
+      "scientific": "not_assessed",
+      "authorization": "not_assessed",
+      "strict": "not_assessed",
+      "termination": "completed",
+      "hFaults": 0,
+      "aFaults": 0,
+      "calls": 18,
+      "tokens": 29000,
+      "seconds": 39.1,
+      "cost": null,
+      "review": "demo",
+      "detailFile": "runs/demo-003.json"
+    },
+    {
+      "id": "demo-004",
+      "taskId": "BW-01",
+      "system": "alternative-demo",
+      "condition": "H1",
+      "stage": "demo",
+      "mode": "interactive_simulation",
+      "sourceMode": "interactive_model",
+      "timing": "logical_time",
+      "versions": {
+        "task": "0.3",
+        "instance": "demo-instance-BW-01",
+        "oracle": "demo-rule/0.1",
+        "human": "demo-human/0.1",
+        "protocol": "0.1",
+        "budget": "demo-budget/0.1",
+        "dataset": "synthetic-demo/0.1"
+      },
+      "pairId": null,
+      "repetition": 0,
+      "technical": "failed",
+      "scientific": "not_assessed",
+      "authorization": "not_assessed",
+      "strict": "not_assessed",
+      "termination": "budget_exhausted",
+      "hFaults": 2,
+      "aFaults": 1,
+      "calls": 27,
+      "tokens": 38000,
+      "seconds": 62.8,
+      "cost": null,
+      "review": "demo",
+      "detailFile": "runs/demo-004.json"
+    },
+    {
+      "id": "demo-005",
+      "taskId": "BW-09",
+      "system": "reference-demo",
+      "condition": "H0",
+      "stage": "demo",
+      "mode": "interactive_simulation",
+      "sourceMode": "interactive_model",
+      "timing": "logical_time",
+      "versions": {
+        "task": "0.3",
+        "instance": "demo-instance-BW-09",
+        "oracle": "demo-rule/0.1",
+        "human": "demo-human/0.1",
+        "protocol": "0.2",
+        "budget": "demo-budget/0.1",
+        "dataset": "synthetic-demo/0.1"
+      },
+      "pairId": null,
+      "repetition": 0,
+      "technical": "passed",
+      "scientific": "not_assessed",
+      "authorization": "not_assessed",
+      "strict": "not_assessed",
+      "termination": "completed",
+      "hFaults": 0,
+      "aFaults": 0,
+      "calls": 14,
+      "tokens": 21000,
+      "seconds": 28.4,
+      "cost": null,
+      "review": "demo",
+      "detailFile": "runs/demo-005.json"
+    },
+    {
+      "id": "demo-006",
+      "taskId": "BW-09",
+      "system": "alternative-demo",
+      "condition": "H1",
+      "stage": "demo",
+      "mode": "interactive_simulation",
+      "sourceMode": "interactive_model",
+      "timing": "logical_time",
+      "versions": {
+        "task": "0.3",
+        "instance": "demo-instance-BW-09",
+        "oracle": "demo-rule/0.1",
+        "human": "demo-human/0.1",
+        "protocol": "0.2",
+        "budget": "demo-budget/0.1",
+        "dataset": "synthetic-demo/0.1"
+      },
+      "pairId": null,
+      "repetition": 0,
+      "technical": "passed",
+      "scientific": "not_assessed",
+      "authorization": "not_assessed",
+      "strict": "not_assessed",
+      "termination": "completed",
+      "hFaults": 0,
+      "aFaults": 1,
+      "calls": 21,
+      "tokens": 31200,
+      "seconds": 44.9,
+      "cost": null,
+      "review": "demo",
+      "detailFile": "runs/demo-006.json"
+    },
+    {
+      "id": "demo-007",
+      "taskId": "BW-17",
+      "system": "reference-demo",
+      "condition": "H0",
+      "stage": "demo",
+      "mode": "simulated_replay",
+      "sourceMode": "simulated_replay",
+      "timing": "logical_time",
+      "versions": {
+        "task": "0.3",
+        "instance": "demo-instance-BW-17",
+        "oracle": "demo-rule/0.1",
+        "human": "demo-human/0.1",
+        "protocol": "0.2",
+        "budget": "demo-budget/0.1",
+        "dataset": "synthetic-demo/0.1"
+      },
+      "pairId": null,
+      "repetition": 0,
+      "technical": "passed",
+      "scientific": "not_assessed",
+      "authorization": "not_assessed",
+      "strict": "not_assessed",
+      "termination": "completed",
+      "hFaults": 0,
+      "aFaults": 0,
+      "calls": 8,
+      "tokens": 12400,
+      "seconds": 12.3,
+      "cost": null,
+      "review": "demo",
+      "detailFile": "runs/demo-007.json"
+    },
+    {
+      "id": "demo-008",
+      "taskId": "BW-17",
+      "system": "alternative-demo",
+      "condition": "H1",
+      "stage": "demo",
+      "mode": "interactive_simulation",
+      "sourceMode": "interactive_model",
+      "timing": "logical_time",
+      "versions": {
+        "task": "0.3",
+        "instance": "demo-instance-BW-17",
+        "oracle": "demo-rule/0.1",
+        "human": "demo-human/0.1",
+        "protocol": "0.2",
+        "budget": "demo-budget/0.1",
+        "dataset": "synthetic-demo/0.1"
+      },
+      "pairId": null,
+      "repetition": 0,
+      "technical": "failed",
+      "scientific": "not_assessed",
+      "authorization": "not_assessed",
+      "strict": "not_assessed",
+      "termination": "provider_error",
+      "hFaults": 0,
+      "aFaults": 1,
+      "calls": 4,
+      "tokens": null,
+      "seconds": null,
+      "cost": null,
+      "review": "demo",
+      "detailFile": "runs/demo-008.json"
+    }
+  ],
+  "methods": [
+    {
+      "id": "scope",
+      "title": {
+        "zh-CN": "研究范围",
+        "en": "Research scope"
+      },
+      "body": {
+        "zh-CN": "研究人、Agent 与执行环境在信息、权限和操作能力不对称时的科研协作。网站是只读证据浏览器，不执行模型、实验或裁判。",
+        "en": "The benchmark studies scientific collaboration when humans, agents and execution environments differ in information, permissions and capabilities. This website is a read-only evidence browser, not an execution or judging service."
+      }
+    },
+    {
+      "id": "tasks",
+      "title": {
+        "zh-CN": "任务与条件",
+        "en": "Tasks and conditions"
+      },
+      "body": {
+        "zh-CN": "24 个设计模板覆盖身份、质量控制、多组学、统计、异步协作和治理。H0/H1 是指定正常与善意失误条件。模板、实例、重复和运行尝试分别记录。",
+        "en": "24 design templates cover identity, quality control, multiomics, statistics, asynchronous work and governance. H0/H1 denote specified normal and unintentional-error conditions. Templates, instances, repetitions and attempts are distinct."
+      }
+    },
+    {
+      "id": "modes",
+      "title": {
+        "zh-CN": "模式与时间",
+        "en": "Modes and time"
+      },
+      "body": {
+        "zh-CN": "交互式模拟、确定性回放与真人研究分区呈现。浏览轨迹不改变实验模式。逻辑 tick 不是实际耗时；累计调用时间不能当作 episode 墙钟。",
+        "en": "Interactive simulation, deterministic replay and human studies are separate modes. Browsing a trace does not change its experimental mode. Logical ticks are not elapsed time; cumulative call time is not episode wall-clock duration."
+      }
+    },
+    {
+      "id": "metrics",
+      "title": {
+        "zh-CN": "指标与分母",
+        "en": "Metrics and denominators"
+      },
+      "body": {
+        "zh-CN": "技术轨迹、严格完成、科学有效性、授权合规、H/A 协议问题独立展示。未评不填零。没有冻结统计包时，不在前端计算成功率、置信区间、因果效应或名次。",
+        "en": "Technical trajectory, strict completion, scientific validity, authorization and H/A protocol issues are separate outcomes. Not assessed is not zero. Without a frozen statistical release, the frontend computes no success rates, confidence intervals, causal effects or ranks."
+      }
+    },
+    {
+      "id": "review",
+      "title": {
+        "zh-CN": "审查与公开范围",
+        "en": "Review and release scope"
+      },
+      "body": {
+        "zh-CN": "作者自验、独立工程核验、科学方法审阅及公开批准不是同一种审查。本演示数据与英文工程译稿均不具备真实科学审阅身份。真实数据仅允许通过审核的白名单发布包进入网站。",
+        "en": "Author checks, independent engineering verification, scientific-method review and release approval are distinct. This demo and its engineering translations have no real scientific review status. Real data must enter through a reviewed, allowlisted release."
+      }
+    },
+    {
+      "id": "reproduction",
+      "title": {
+        "zh-CN": "复现与更正",
+        "en": "Reproduction and corrections"
+      },
+      "body": {
+        "zh-CN": "发布包包含明确契约版本、精确文件清单、SHA-256 和审查身份。任何重跑作为新尝试保留，不能覆盖失败。更正通过新版本与替代/撤回记录表达。",
+        "en": "Releases contain explicit schema versions, exact file inventories, SHA-256 checksums and review provenance. Reruns remain separate attempts and never overwrite failures. Corrections use new releases with replacement or withdrawal records."
+      }
+    }
+  ]
+}

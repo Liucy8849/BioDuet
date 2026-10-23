@@ -1,0 +1,229 @@
+{
+  "runId": "demo-006",
+  "events": [
+    {
+      "id": "e01",
+      "sequence": 1,
+      "tick": 0,
+      "actor": "A",
+      "kind": "action",
+      "title": {
+        "zh-CN": "读取公开任务与版本",
+        "en": "Read public task and versions"
+      },
+      "body": "SYNTHETIC DEMO. Read the released task specification and current object versions.",
+      "source": "synthetic_demo",
+      "parents": [],
+      "object": null,
+      "before": null,
+      "after": null,
+      "decision": "not_assessed",
+      "visibility": "public"
+    },
+    {
+      "id": "e02",
+      "sequence": 2,
+      "tick": 1,
+      "actor": "H",
+      "kind": "message",
+      "title": {
+        "zh-CN": "核对来源记录",
+        "en": "Check source records"
+      },
+      "body": "SYNTHETIC DEMO. The human-side simulator reviews a source record. This is not a real human participant.",
+      "source": "synthetic_demo",
+      "parents": [
+        "e01"
+      ],
+      "object": null,
+      "before": null,
+      "after": null,
+      "decision": "not_assessed",
+      "visibility": "public"
+    },
+    {
+      "id": "e03",
+      "sequence": 3,
+      "tick": 1,
+      "actor": "H",
+      "kind": "revision",
+      "title": {
+        "zh-CN": "提交有据修订",
+        "en": "Submit an evidence-based revision"
+      },
+      "body": "SYNTHETIC DEMO. A correction is submitted with a source reference.",
+      "source": "synthetic_demo",
+      "parents": [
+        "e02"
+      ],
+      "object": "sample-labels",
+      "before": "v1",
+      "after": "v2",
+      "decision": "not_assessed",
+      "visibility": "public"
+    },
+    {
+      "id": "e04",
+      "sequence": 4,
+      "tick": 2,
+      "actor": "world",
+      "kind": "receipt",
+      "title": {
+        "zh-CN": "接收版本修订",
+        "en": "Accept version revision"
+      },
+      "body": "SYNTHETIC DEMO. The revision is accepted; this receipt alone does not establish scientific validity.",
+      "source": "synthetic_demo",
+      "parents": [
+        "e03"
+      ],
+      "object": null,
+      "before": null,
+      "after": null,
+      "decision": "passed",
+      "visibility": "public"
+    },
+    {
+      "id": "e05",
+      "sequence": 5,
+      "tick": 2,
+      "actor": "A",
+      "kind": "action",
+      "title": {
+        "zh-CN": "更新分析设计",
+        "en": "Update analysis design"
+      },
+      "body": "SYNTHETIC DEMO. Prepare a donor-level design using the current labels.",
+      "source": "synthetic_demo",
+      "parents": [
+        "e04"
+      ],
+      "object": "analysis-design",
+      "before": "v1",
+      "after": "v2",
+      "decision": "not_assessed",
+      "visibility": "public"
+    },
+    {
+      "id": "e06",
+      "sequence": 6,
+      "tick": 3,
+      "actor": "A",
+      "kind": "redacted",
+      "title": {
+        "zh-CN": "受限事件占位",
+        "en": "Restricted event placeholder"
+      },
+      "body": "Content is not released. This placeholder preserves sequence coverage.",
+      "source": "synthetic_demo",
+      "parents": [
+        "e05"
+      ],
+      "object": null,
+      "before": null,
+      "after": null,
+      "decision": "restricted",
+      "visibility": "restricted"
+    },
+    {
+      "id": "e07",
+      "sequence": 7,
+      "tick": 3,
+      "actor": "worker",
+      "kind": "receipt",
+      "title": {
+        "zh-CN": "生成候选分析产物",
+        "en": "Produce candidate analysis artifact"
+      },
+      "body": "SYNTHETIC DEMO. Candidate output generated. Numeric execution does not establish scientific validity.",
+      "source": "synthetic_demo",
+      "parents": [
+        "e06"
+      ],
+      "object": null,
+      "before": null,
+      "after": null,
+      "decision": "passed",
+      "visibility": "public"
+    },
+    {
+      "id": "e08",
+      "sequence": 8,
+      "tick": 4,
+      "actor": "oracle",
+      "kind": "judgment",
+      "title": {
+        "zh-CN": "独立判定区域",
+        "en": "Separate judgment stage"
+      },
+      "body": "SYNTHETIC DEMO. Formal scientific validity has not been assessed.",
+      "source": "synthetic_demo",
+      "parents": [
+        "e07"
+      ],
+      "object": null,
+      "before": null,
+      "after": null,
+      "decision": "not_assessed",
+      "visibility": "public"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "artifact-demo-006",
+      "title": {
+        "zh-CN": "供体层设计表（演示）",
+        "en": "Donor-level design table (demo)"
+      },
+      "type": "table",
+      "status": "candidate",
+      "method": "synthetic-design-table",
+      "unit": "donor",
+      "inputVersion": "v2",
+      "sha256": "4950cb7823df52640cd0fbf67a3270c84972cd7f2e38193f220c1885aeb66952",
+      "eventId": "e07",
+      "columns": [
+        "donor_id",
+        "condition",
+        "source_version"
+      ],
+      "rows": [
+        [
+          "donor-01",
+          "control",
+          "v2"
+        ],
+        [
+          "donor-02",
+          "corrected-stimulated",
+          "v2"
+        ],
+        [
+          "donor-03",
+          "control",
+          "v2"
+        ]
+      ]
+    }
+  ],
+  "judgment": {
+    "ruleId": "demo-rule-01",
+    "status": "not_assessed",
+    "explanation": {
+      "zh-CN": "仅验证界面与引用关系。此记录不能用于科学有效性或模型能力结论。",
+      "en": "Validates the interface and reference relationships only. This record cannot support scientific-validity or model-capability claims."
+    },
+    "evidenceRefs": [
+      "e07",
+      "e08"
+    ],
+    "output": "SYNTHETIC DEMO. No scientific conclusion is released."
+  },
+  "sourceCommit": null,
+  "sourceSet": "fictional-ui-fixture/0.1",
+  "coverage": {
+    "zh-CN": "8 个合成事件；1 个受限占位。不对应真实实验轨迹。",
+    "en": "8 synthetic events; 1 restricted placeholder. Not a real experimental trajectory."
+  },
+  "originalLocale": "en"
+}
