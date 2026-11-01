@@ -1,0 +1,7 @@
+{
+  "actual_scientific_episodes": 0,
+  "native_ABI_and_trusted_issuer_still_pending": true,
+  "schema": "bioduet-current-mainline-pointer/1",
+  "source_only_and_pure_gate_tests": true,
+  "source_provenance": "mainline-source16.json"
+}

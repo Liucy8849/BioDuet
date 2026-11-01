@@ -11,3 +11,9 @@ SDK04 and the fixed R environment remain external dependencies. Accepted evidenc
 The BioDuet project executor handles ordinary source changes with fresh pins and per-job authorization. Scientific fitting still requires the actual A-generated full code/dependency/options/input closure, a trusted S applicability decision, and immutable code/input mounts with current finite execution permission. Host configuration and trusted-service changes remain administrator responsibilities.
 
 Only TD01 is closed. New accepted scientific episodes are zero; formal and strict results remain null. All 60 tasks, 24 cards, both formal tracks, independent scientific and engineering reviews, a new release and actual fixed LabWeave consumption remain required.
+
+## Current Source16 update
+
+The current 75-source, 13-entry selection is recorded in provenance/mainline-source16.json and provenance/current-mainline.json. Seven files advance the gate and its import identities; all previous source versions remain preserved. The gate now rejects missing, null, empty, incorrectly typed or malformed binding digests before comparing values.
+
+M personally submitted the required source-and-binding audit through the BioDuet project entry. The actual job ran as UID/GID20020 with empty groups, checked both complete source selections, and passed 13 stdlib test methods (11 compatibility plus two new methods) with 47 recorded rejection subcases. All five declared evidence files were read and hashed; the service reported completed, exit0, integrity and cleanup verified. This establishes a pure-files engineering result, not a native ABI, trusted S issuer, model, R fit, scientific result or full authority handover. The latter still requires the dedicated operator boundary and appropriate role/service profiles.
