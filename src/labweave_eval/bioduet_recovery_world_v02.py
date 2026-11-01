@@ -2,7 +2,7 @@
 from copy import deepcopy
 from pathlib import Path
 
-from .bioduet_integrity_v01 import need, pinned, strict, sha, digest_file
+from .bioduet_window_v01 import need, pinned, strict, sha, digest_file
 from .bioduet_prehistory_v01 import load_artifact, QC_METHOD
 from .bw01_science_v01 import validate_design
 from .bw01_data_v01 import METHOD

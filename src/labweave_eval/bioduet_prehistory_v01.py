@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 import time
 
-from .bioduet_integrity_v01 import need, pinned, strict, save, sha, digest_file
+from .bioduet_window_v01 import need, pinned, strict, save, sha, digest_file
 from .bw01_science_v01 import validate_design
 from .bioduet_science_v02 import execute
 from .bw01_environment_v01 import verify_installation

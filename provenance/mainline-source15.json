@@ -1,0 +1,772 @@
+{
+  "baseline_commit": "daa4d891af8a7d37a2d4c7779123812dfe0f3704",
+  "formal": null,
+  "mapping": [
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/authorization_stage_recorder_v02.py",
+      "source_ref": {
+        "bytes": 3871,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-concurrency-20261030-01/authorization_stage_recorder_v02.py",
+        "sha256": "9bee90145b0171963209762f8991ce4e99474997b5b672bad94b83839a37e2ec"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/host_evidence_journal_v04.py",
+      "source_ref": {
+        "bytes": 5057,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-concurrency-20261030-01/host_evidence_journal_v04.py",
+        "sha256": "8c658526e96c9ddb01ffed465fa963f5c64f2c95ec7aa466a7b5f6fc835c9e2e"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/port_witness_v01.py",
+      "source_ref": {
+        "bytes": 4112,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-concurrency-20261030-01/port_witness_v01.py",
+        "sha256": "b4c203a310fe08429d1091a155b51d7752ac0f41a284ce3eed31a1a1ecb2abea"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/scientific_episode_capture_v02.py",
+      "source_ref": {
+        "bytes": 6302,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-concurrency-20261030-01/scientific_episode_capture_v02.py",
+        "sha256": "297a2b64cfe44c31060bfa97c372d3d48b1e3ff8632f9452125f6bd6cd8134b2"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/scientific_world_observation_v03.py",
+      "source_ref": {
+        "bytes": 8408,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-concurrency-20261030-01/scientific_world_observation_v03.py",
+        "sha256": "bc34cc1efcd6809eb681e51c34f01364946ac9b9bb7c38a1735a45c23b9f2839"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/__init__.py",
+      "source_ref": {
+        "bytes": 53,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/__init__.py",
+        "sha256": "0e497052668463766588c3d79d650ac2d36ecb12766fbd7aee8cc28bc6f735c9"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/change_notices_v03.py",
+      "source_ref": {
+        "bytes": 9555,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/change_notices_v03.py",
+        "sha256": "0aeb829125921634d3415500d99de2d36504a3d8ee3feda529f5b0efc0eb7487"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/contracts_v01.py",
+      "source_ref": {
+        "bytes": 4883,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/contracts_v01.py",
+        "sha256": "317c805918b4ef415a1cb8d0652fe81acd2ff6b0610fc98097fe283dda996b7e"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/dataset_v01.py",
+      "source_ref": {
+        "bytes": 2156,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/dataset_v01.py",
+        "sha256": "9a8beccf4b62477885bd9dce8ab36561f27ce93d947bb184a2531706b17855d7"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/jobs_v01.py",
+      "source_ref": {
+        "bytes": 6851,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/jobs_v01.py",
+        "sha256": "fddaabba5feb7d87cf18b269a596bb52803e8f2c5cedd3a48ba6b0d53d07b2cc"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/jobs_v02.py",
+      "source_ref": {
+        "bytes": 4414,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/jobs_v02.py",
+        "sha256": "7e309ad9272cd1b074a6f084e664314e6e435bf7a6f0264b73a515936ebf37cc"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/jobs_v03.py",
+      "source_ref": {
+        "bytes": 1821,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/jobs_v03.py",
+        "sha256": "069ddee80930fe9e3095ade4ae8c779b60d5026f7594a41bb4af4cbbc1086b14"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/logical_study_endpoint_v06.py",
+      "source_ref": {
+        "bytes": 10051,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/logical_study_endpoint_v06.py",
+        "sha256": "05ac19bed759308aa4680c545e7adcfe9ec4fada65e79394653019ac7cb41032"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/mcp_bridge_v01.py",
+      "source_ref": {
+        "bytes": 2727,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/mcp_bridge_v01.py",
+        "sha256": "99b96a6cd88947d888a77ee691497ba96e9aa2470b9d9243906fdb6941eef91d"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/mcp_bridge_v02.py",
+      "source_ref": {
+        "bytes": 2855,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/mcp_bridge_v02.py",
+        "sha256": "0819f82ddedc0b6165e7e62593143e21a380078cb1a37f63f69868e22f354f0e"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/mcp_tool_contracts_v01.py",
+      "source_ref": {
+        "bytes": 2665,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/mcp_tool_contracts_v01.py",
+        "sha256": "9fcd4460f72892864ee491a791309aa6c2051f3d8f9f8d19f18d563d2dc86a76"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/model_gateway_client_v03.py",
+      "source_ref": {
+        "bytes": 1918,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/model_gateway_client_v03.py",
+        "sha256": "f999a9c3f1136ca3b91184f99b5732c6ed92ba7c758ff052477f5114311c2adb"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/model_gateway_http_v04.py",
+      "source_ref": {
+        "bytes": 2638,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/model_gateway_http_v04.py",
+        "sha256": "5cf7214b34f4c9e8959e7533d5e9779c016d5c072aa60ddd7ba0c03384b8a17c"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/model_gateway_upstream_v04.py",
+      "source_ref": {
+        "bytes": 3500,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/model_gateway_upstream_v04.py",
+        "sha256": "4e8e90066c492e7b543346ecf9795268b63ab6612558afbb7e192d885c88d5e7"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/model_gateway_v04.py",
+      "source_ref": {
+        "bytes": 17466,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/model_gateway_v04.py",
+        "sha256": "a660be4999be8a17377468f78f83bc42e87fab7c0da42e327cf58c7b62797236"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/native_artifact_snapshots_v01.py",
+      "source_ref": {
+        "bytes": 4743,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/native_artifact_snapshots_v01.py",
+        "sha256": "96046c8f76014f3d11430beec893bf6b35bae843b47bddd164726ef2ff27037e"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/native_artifact_world_port_v01.py",
+      "source_ref": {
+        "bytes": 2686,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/native_artifact_world_port_v01.py",
+        "sha256": "cc4477a192a56b4e3aefb8128a44d5db26d5f50349b3de71bf55f34bf2a9b6c1"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/native_science_host_composition_v08.py",
+      "source_ref": {
+        "bytes": 19793,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/native_science_host_composition_v08.py",
+        "sha256": "82427e80294f538acdead27a3875198be001f1a27a49770a6af80c7a55ef3563"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/native_science_participant_mcp_v02.py",
+      "source_ref": {
+        "bytes": 3199,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/native_science_participant_mcp_v02.py",
+        "sha256": "2abd6481b8dbdbffe7985e5efa9673f516091f656c43051ac38338d840186908"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/native_science_world_v03.py",
+      "source_ref": {
+        "bytes": 15161,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/native_science_world_v03.py",
+        "sha256": "ed23b7ccbd13c24309d02be9c6039d7d6455947228edcb7f13ab1a0df2313f42"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/participant_observer_v04.py",
+      "source_ref": {
+        "bytes": 6045,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/participant_observer_v04.py",
+        "sha256": "6a5fba00bc6b0828a3be9786cb7631fa40ae53254f2b413ada20049406e2a595"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/participant_session_v01.py",
+      "source_ref": {
+        "bytes": 4404,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/participant_session_v01.py",
+        "sha256": "234fe3b5c21ebe64c086dceafa5447df45eea5b6ac4bb51f7ef2c92421bd8580"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/participant_tools_v03.py",
+      "source_ref": {
+        "bytes": 4275,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/participant_tools_v03.py",
+        "sha256": "3f43e21f7fbd57f53ea7a01934f6bbd424c4b287d93ebcb1acb6901ed186027c"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/participant_tools_v04.py",
+      "source_ref": {
+        "bytes": 2274,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/participant_tools_v04.py",
+        "sha256": "78a496e5676c7487e69b993cfb5c5c0ac7d739d02011d41b957e7b4e8cb58833"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/participant_tools_v05.py",
+      "source_ref": {
+        "bytes": 1919,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/participant_tools_v05.py",
+        "sha256": "fb5741ffb175720679366d700169ae57e5cd9565dd6ac39fa0f99d00714c5bc9"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/protocol_counts_v01.py",
+      "source_ref": {
+        "bytes": 1943,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/protocol_counts_v01.py",
+        "sha256": "47c48e9f04900e0b67a6d900f59b4690ac3fcbc11c8134bb709d840b1cbb2185"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/protocol_export_v02.py",
+      "source_ref": {
+        "bytes": 2505,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/protocol_export_v02.py",
+        "sha256": "73b5ddaec7b1a05810d1e92ee4dbe31f82b8467786c6db62c1c7963903350b6c"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/science_execution_gate_v05.py",
+      "source_ref": {
+        "bytes": 12829,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/science_execution_gate_v05.py",
+        "sha256": "e052fd2ba5e0770d41a5e13f79d525ae0ead13fc33a51f73da8953019405c026"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/science_http_transport_v01.py",
+      "source_ref": {
+        "bytes": 4640,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/science_http_transport_v01.py",
+        "sha256": "8672ff98701385ba91f32c2f611866ba9693efbcf7029c715c12d1df694d9edd"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/science_review_host_v02.py",
+      "source_ref": {
+        "bytes": 6065,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/science_review_host_v02.py",
+        "sha256": "48191520791d4373dc9c7b888f0f2447a6bfe73178b3f928272a903a24c59541"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/scoped_native_science_tools_v06.py",
+      "source_ref": {
+        "bytes": 2581,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/scoped_native_science_tools_v06.py",
+        "sha256": "e2907aba66c82298d2e581f75e4e7634455d3f5c0d73deae69c508df65d8ad6b"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/scoped_study_http_v03.py",
+      "source_ref": {
+        "bytes": 7413,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/scoped_study_http_v03.py",
+        "sha256": "517def99597607aef4b63a2fbdf51180fdce6f41d410f66cfed7e2d6e935d391"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/score_bridge_v01.py",
+      "source_ref": {
+        "bytes": 3612,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/score_bridge_v01.py",
+        "sha256": "b90189cabc0598a373102083ed77fda6a855c8fa8556f4a979c634c0ca259b87"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/score_bridge_v02.py",
+      "source_ref": {
+        "bytes": 3612,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/score_bridge_v02.py",
+        "sha256": "ea5526dec11f33007157abebc9e6a6571b3e5d2a42e345fd943710dccae86b2e"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/span_review_v02.py",
+      "source_ref": {
+        "bytes": 13138,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/span_review_v02.py",
+        "sha256": "6c4a5c78503bf92d5d4183713cadacee00bb98caaeed47f76ffa302c06f50be0"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/trace_v01.py",
+      "source_ref": {
+        "bytes": 4916,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/trace_v01.py",
+        "sha256": "2b7f4504b4ab2e36f9a300fc2672440b275d72ef29b012aeda93b22d6cf29e3b"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/trace_v02.py",
+      "source_ref": {
+        "bytes": 4986,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/trace_v02.py",
+        "sha256": "3f910ec3f06bdd7458da5e9cc0fd1d561f63a1d803788da6820a2725da4a6f16"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/bioduet_vnext/workspace_v02.py",
+      "source_ref": {
+        "bytes": 5923,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/bioduet_vnext/workspace_v02.py",
+        "sha256": "e0ef712e450159482a391b05cad7e8167109c2a4f6dbadc1581dcf10f05c2c4c"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "scripts/provider/serve_native_role_provider_v04.py",
+      "source_ref": {
+        "bytes": 7963,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/native_model_provider_preparation_v01/serve_native_role_provider_v04.py",
+        "sha256": "9cb0d2f06acd3f47f87085426f047056a5206f7625bbe6d7023b8e8a814b0467"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "scripts/native_agents/run_openhands_science_actor_v25.py",
+      "source_ref": {
+        "bytes": 25642,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/openhands_model_actor_preparation_v01/run_openhands_science_actor_v25.py",
+        "sha256": "a43f76a01291fecf806fcc192ea36e22b800218d3e1f806ee158d74d3c9535a1"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "scripts/science_loop/build_method_scope_feedback_draft_v02.py",
+      "source_ref": {
+        "bytes": 3691,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/science_loop_preparation_v01/build_method_scope_feedback_draft_v02.py",
+        "sha256": "a1631ef3bc2a99db8b7a58d3a8b4d1f15ff014b73d46fbd0bfa4b4f0f4b73e4e"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "scripts/science_loop/build_science_loop_release_candidate_v04.py",
+      "source_ref": {
+        "bytes": 9192,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/science_loop_preparation_v01/build_science_loop_release_candidate_v04.py",
+        "sha256": "df108a33f089ca07d1875f8b7398162018e4e31c123e96516ba851945d8acbbf"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "scripts/science_loop/build_scientific_execution_gate_draft_v04.py",
+      "source_ref": {
+        "bytes": 7237,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/science_loop_preparation_v01/build_scientific_execution_gate_draft_v04.py",
+        "sha256": "82dcfe466361a8f973d91cb1e3fd544810b2cde5977629f145ab2b80d6d3fb16"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "scripts/science_loop/qualify_scoped_native_science_tools_v05.py",
+      "source_ref": {
+        "bytes": 6180,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/science_loop_preparation_v01/qualify_scoped_native_science_tools_v05.py",
+        "sha256": "dc3345374d2c43b72b27985076372d05196d38cb03980877fa004804117a2cc7"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "scripts/science_loop/qualify_staged_R_runtime_v02.py",
+      "source_ref": {
+        "bytes": 4269,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/science_loop_preparation_v01/qualify_staged_R_runtime_v02.py",
+        "sha256": "db899d3343971ba9657d2e5f0c308f7582870602fe9d4939ed2a6b2c5783ee53"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "scripts/science_loop/serve_native_science_host_v08.py",
+      "source_ref": {
+        "bytes": 8156,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/science_loop_preparation_v01/serve_native_science_host_v08.py",
+        "sha256": "6fec40739d137723066fbb15a438dc1a53f58c982a7e18c3bf01280708b367b1"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "scripts/science_loop/serve_science_role_MCP_v05.py",
+      "source_ref": {
+        "bytes": 7087,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/science_loop_preparation_v01/serve_science_role_MCP_v05.py",
+        "sha256": "fa58cb377768187e00ae8f328060cf28a02d62e9693762fa47c4ee100def927f"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "scripts/science_loop/stage_pinned_R_runtime_v02.py",
+      "source_ref": {
+        "bytes": 4027,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/science_loop_preparation_v01/stage_pinned_R_runtime_v02.py",
+        "sha256": "fc4affcce05b975a83c3e4252c12168a355f4b8fdc05b06b909ccec14a5c1281"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "scripts/science_loop/test_native_science_profile_v02.py",
+      "source_ref": {
+        "bytes": 7067,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/science_loop_preparation_v01/test_native_science_profile_v02.py",
+        "sha256": "5f0deca7565ac9498b428079aee9788a667e7677b00b11925b20c19410c77cc9"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "scripts/science_loop/test_science_execution_gate_v04.py",
+      "source_ref": {
+        "bytes": 9264,
+        "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/science_loop_preparation_v01/test_science_execution_gate_v04.py",
+        "sha256": "a873fd355e408fb41a56539fb82b765a909a24031aafa3bfbd19b968ec81d2bd"
+      }
+    },
+    {
+      "action": "identical",
+      "previous_sha256": "b8351a88720d6f9f54a75a72c2b5705c3c44e501114446ef97c5e4eabbea3463",
+      "repository_path": "src/labweave_eval/__init__.py",
+      "source_ref": {
+        "bytes": 103,
+        "path": "/data1/Liuchenyu/labweave/project/evaluation/labweave_eval/__init__.py",
+        "sha256": "b8351a88720d6f9f54a75a72c2b5705c3c44e501114446ef97c5e4eabbea3463"
+      }
+    },
+    {
+      "action": "identical",
+      "previous_sha256": "afc9f622e83726064c48c2f13e9e05f413fa4eb494b41d4ada10e1b0d079841e",
+      "repository_path": "src/labweave_eval/async_contract.py",
+      "source_ref": {
+        "bytes": 3328,
+        "path": "/data1/Liuchenyu/labweave/project/evaluation/labweave_eval/async_contract.py",
+        "sha256": "afc9f622e83726064c48c2f13e9e05f413fa4eb494b41d4ada10e1b0d079841e"
+      }
+    },
+    {
+      "action": "identical",
+      "previous_sha256": "f01ee70ebd4b02c2b38e759ac8f83b780da8945a8e79f97f59307b46827a0294",
+      "repository_path": "src/labweave_eval/bioduet_logical_v02.py",
+      "source_ref": {
+        "bytes": 13854,
+        "path": "/data1/Liuchenyu/labweave/project/evaluation/labweave_eval/bioduet_logical_v02.py",
+        "sha256": "f01ee70ebd4b02c2b38e759ac8f83b780da8945a8e79f97f59307b46827a0294"
+      }
+    },
+    {
+      "action": "replace_released_source",
+      "previous_sha256": "46ff135685bd25b329d76794700616b4983e74715c233b929a2a893afb0daeab",
+      "repository_path": "src/labweave_eval/bioduet_prehistory_v01.py",
+      "source_ref": {
+        "bytes": 7083,
+        "path": "/data1/Liuchenyu/labweave/project/evaluation/labweave_eval/bioduet_prehistory_v01.py",
+        "sha256": "2c2d7eb1e72ee58323b37c33df089c60606f58cbf62a6073d33b22039ea5f91f"
+      }
+    },
+    {
+      "action": "identical",
+      "previous_sha256": "6cf3e9716e68315edb8f0c5badf24dee1d46412e998b130d1b6eab0a1396ad8e",
+      "repository_path": "src/labweave_eval/bioduet_process_cleanup_v01.py",
+      "source_ref": {
+        "bytes": 1639,
+        "path": "/data1/Liuchenyu/labweave/project/evaluation/labweave_eval/bioduet_process_cleanup_v01.py",
+        "sha256": "6cf3e9716e68315edb8f0c5badf24dee1d46412e998b130d1b6eab0a1396ad8e"
+      }
+    },
+    {
+      "action": "replace_released_source",
+      "previous_sha256": "6cd322d85776081594b212b8888321ff64d4a372c9a66d139ff98d2fbc748368",
+      "repository_path": "src/labweave_eval/bioduet_recovery_world_v02.py",
+      "source_ref": {
+        "bytes": 19168,
+        "path": "/data1/Liuchenyu/labweave/project/evaluation/labweave_eval/bioduet_recovery_world_v02.py",
+        "sha256": "99a00215cacebc4bf1340e913483356cd8c415f325b9d43313eafd89b2af7501"
+      }
+    },
+    {
+      "action": "identical",
+      "previous_sha256": "0421ea8c1455af54db508fb6fe03bf4f1f5b8fbe96e09f6ec4b2221abb24db6f",
+      "repository_path": "src/labweave_eval/bioduet_science_v02.py",
+      "source_ref": {
+        "bytes": 4980,
+        "path": "/data1/Liuchenyu/labweave/project/evaluation/labweave_eval/bioduet_science_v02.py",
+        "sha256": "0421ea8c1455af54db508fb6fe03bf4f1f5b8fbe96e09f6ec4b2221abb24db6f"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/labweave_eval/bioduet_task_assessment_v01.py",
+      "source_ref": {
+        "bytes": 25436,
+        "path": "/data1/Liuchenyu/labweave/project/evaluation/labweave_eval/bioduet_task_assessment_v01.py",
+        "sha256": "930f0a72e432aa191eeffae1f35a13ade6c8008301b94cfbdc0edaa4d3e783ce"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/labweave_eval/bioduet_task_scoreboard_v01.py",
+      "source_ref": {
+        "bytes": 3407,
+        "path": "/data1/Liuchenyu/labweave/project/evaluation/labweave_eval/bioduet_task_scoreboard_v01.py",
+        "sha256": "0d5621b7e4149c75fe14bfeb0f6ac299c19900e0701931d8ceaa7cca78e2fe3c"
+      }
+    },
+    {
+      "action": "add",
+      "previous_sha256": null,
+      "repository_path": "src/labweave_eval/bioduet_window_v01.py",
+      "source_ref": {
+        "bytes": 10169,
+        "path": "/data1/Liuchenyu/labweave/project/evaluation/labweave_eval/bioduet_window_v01.py",
+        "sha256": "d479305529f70c175e599eac4a84b3ba88c1824120dfc90ccad08a392162a8b6"
+      }
+    },
+    {
+      "action": "identical",
+      "previous_sha256": "e49c04cd190ba84bdae87cd0ff16e5ff8e27db8dab30ef56135ad9de212b501e",
+      "repository_path": "src/labweave_eval/bioduet_world_port_v02.py",
+      "source_ref": {
+        "bytes": 6103,
+        "path": "/data1/Liuchenyu/labweave/project/evaluation/labweave_eval/bioduet_world_port_v02.py",
+        "sha256": "e49c04cd190ba84bdae87cd0ff16e5ff8e27db8dab30ef56135ad9de212b501e"
+      }
+    },
+    {
+      "action": "identical",
+      "previous_sha256": "3358ef6c8cfa1eac4aa536628675f9193af36a1a3a1c70e9aae1a027688ee63d",
+      "repository_path": "src/labweave_eval/bw01_artifacts_v01.py",
+      "source_ref": {
+        "bytes": 1444,
+        "path": "/data1/Liuchenyu/labweave/project/evaluation/labweave_eval/bw01_artifacts_v01.py",
+        "sha256": "3358ef6c8cfa1eac4aa536628675f9193af36a1a3a1c70e9aae1a027688ee63d"
+      }
+    },
+    {
+      "action": "identical",
+      "previous_sha256": "c2ce1a0d39aadac5bf39db4693bff3319612b3d26b23c35e7dea9b5ae67610cb",
+      "repository_path": "src/labweave_eval/bw01_data_v01.py",
+      "source_ref": {
+        "bytes": 9952,
+        "path": "/data1/Liuchenyu/labweave/project/evaluation/labweave_eval/bw01_data_v01.py",
+        "sha256": "c2ce1a0d39aadac5bf39db4693bff3319612b3d26b23c35e7dea9b5ae67610cb"
+      }
+    },
+    {
+      "action": "identical",
+      "previous_sha256": "21e8e16b98a52e268081c5053dd2642f610a19651b125105a80368e40d360c41",
+      "repository_path": "src/labweave_eval/bw01_environment_v01.py",
+      "source_ref": {
+        "bytes": 8938,
+        "path": "/data1/Liuchenyu/labweave/project/evaluation/labweave_eval/bw01_environment_v01.py",
+        "sha256": "21e8e16b98a52e268081c5053dd2642f610a19651b125105a80368e40d360c41"
+      }
+    },
+    {
+      "action": "identical",
+      "previous_sha256": "baad558a04907dc2744348b40773a1043cd78c33a7555c712d4e4d359e4903de",
+      "repository_path": "src/labweave_eval/bw01_logical_v01.py",
+      "source_ref": {
+        "bytes": 13800,
+        "path": "/data1/Liuchenyu/labweave/project/evaluation/labweave_eval/bw01_logical_v01.py",
+        "sha256": "baad558a04907dc2744348b40773a1043cd78c33a7555c712d4e4d359e4903de"
+      }
+    },
+    {
+      "action": "identical",
+      "previous_sha256": "c860b4495bf4b279e1606cb1d8c658aa04de370e521e2057a550e93f4fc3a787",
+      "repository_path": "src/labweave_eval/bw01_result_view_v01.py",
+      "source_ref": {
+        "bytes": 2246,
+        "path": "/data1/Liuchenyu/labweave/project/evaluation/labweave_eval/bw01_result_view_v01.py",
+        "sha256": "c860b4495bf4b279e1606cb1d8c658aa04de370e521e2057a550e93f4fc3a787"
+      }
+    },
+    {
+      "action": "identical",
+      "previous_sha256": "065b4340edd398d569bafc0f13d8ceceb3bb6f063fa5c335de7b885a18cde857",
+      "repository_path": "src/labweave_eval/bw01_science_v01.py",
+      "source_ref": {
+        "bytes": 4460,
+        "path": "/data1/Liuchenyu/labweave/project/evaluation/labweave_eval/bw01_science_v01.py",
+        "sha256": "065b4340edd398d569bafc0f13d8ceceb3bb6f063fa5c335de7b885a18cde857"
+      }
+    },
+    {
+      "action": "identical",
+      "previous_sha256": "1be37f2136a1eeec36952fd4de5a172e661c13f8839458b4f295aa24ae92b251",
+      "repository_path": "src/labweave_eval/canonical.py",
+      "source_ref": {
+        "bytes": 2976,
+        "path": "/data1/Liuchenyu/labweave/project/evaluation/labweave_eval/canonical.py",
+        "sha256": "1be37f2136a1eeec36952fd4de5a172e661c13f8839458b4f295aa24ae92b251"
+      }
+    },
+    {
+      "action": "identical",
+      "previous_sha256": "776c6b9c0da89bd84b598ddde234b8c1873c1c61cc9b94c67c8cb1232d0f4eeb",
+      "repository_path": "src/labweave_eval/contract.py",
+      "source_ref": {
+        "bytes": 4951,
+        "path": "/data1/Liuchenyu/labweave/project/evaluation/labweave_eval/contract.py",
+        "sha256": "776c6b9c0da89bd84b598ddde234b8c1873c1c61cc9b94c67c8cb1232d0f4eeb"
+      }
+    },
+    {
+      "action": "identical",
+      "previous_sha256": "1915117218735030787ab3f24049d867fca6d7048964dac8a35f8b388cda1d1b",
+      "repository_path": "src/labweave_eval/world_port.py",
+      "source_ref": {
+        "bytes": 2240,
+        "path": "/data1/Liuchenyu/labweave/project/evaluation/labweave_eval/world_port.py",
+        "sha256": "1915117218735030787ab3f24049d867fca6d7048964dac8a35f8b388cda1d1b"
+      }
+    }
+  ],
+  "old_release_tag_unchanged": true,
+  "phase_entries": 13,
+  "preserved_source_bytes": true,
+  "runtime_plan_still_uses_original_source15_paths": true,
+  "schema": "bioduet-current-native-source-integration/1",
+  "scientific_episodes": 0,
+  "sdk_and_R_dependencies": "External fixed environments; not redistributed or installed by this source integration.",
+  "source_closure": {
+    "bytes": 70325,
+    "path": "/data1/Liuchenyu/labweave/project/.local/build/bioduet-vnext-20261026-01/science_loop_preparation_v01/science-mainline-static-source-closure-15.json",
+    "sha256": "d40518f1b6161e517a768b478a82cce3a53fb61733c06e2a92f4bef19cbc27b9"
+  },
+  "source_files": 75,
+  "sources_imported_or_tests_run": false,
+  "strict": null,
+  "worktree_locations_not_runtime_admission": true
+}

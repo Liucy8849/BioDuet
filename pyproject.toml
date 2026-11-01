@@ -13,6 +13,9 @@ dependencies = []
 [project.scripts]
 bioduet = "bioduet.cli:main"
 
+[tool.setuptools]
+py-modules = ["authorization_stage_recorder_v02", "host_evidence_journal_v04", "port_witness_v01", "scientific_episode_capture_v02", "scientific_world_observation_v03"]
+
 [tool.setuptools.packages.find]
 where = ["src"]
 
