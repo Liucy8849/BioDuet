@@ -1,3 +1,7 @@
+# Current separation validation — 2026-11-02
+
+After package/path separation, all 81 offline repository tests passed both locally on Windows and on the independent Linux server checkout. This validates the separation against the existing suite; it does not establish native/model/R/browser or scientific qualification. The older results below describe their original versions.
+
 # Engineering validation
 The extracted core was built and installed in an isolated Python 3.11.13 environment, without access to the LabWeave checkout or credentials. The independent reviewer verified 55 + 6 + 20 mutually exclusive passing tests covering all 81 selected tests. This is selective repair validation, not a claim that all 81 passed in one invocation.
 

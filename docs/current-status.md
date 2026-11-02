@@ -4,7 +4,7 @@ The independent local source checkout is D:/code/BioDuet; the independent server
 
 The evaluator package is now bioduet_eval. Imports and package data use that name directly, without a compatibility alias. Active source paths are relative to this checkout; historical absolute paths remain only as provenance. Existing behavior was not redesigned.
 
-The offline repository suite contains 81 tests. The initial local invocation exposed a missing explicit test scratch variable; the portable test entry now supplies that fixture configuration. The suite passed locally after separation. Server regression results are reported after the corresponding Git version is pulled.
+The offline repository suite contains 81 tests. The initial local invocation exposed a missing explicit test scratch variable; the portable test entry now supplies that fixture configuration. The suite passed locally after separation (81/81). The server pulled the separation commit and ran the complete offline repository suite once: 81/81 passed. These checks did not run models, R, SDK sessions, browser tests or scientific evaluations.
 
 The repository includes CLI/runner/evaluators, native-session development sources, a score website and all 24 task cards. It does not include a completed general-purpose digital scientific platform, production database or complete native scientific environment.
 
