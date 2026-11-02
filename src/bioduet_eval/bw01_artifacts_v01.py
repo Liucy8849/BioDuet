@@ -25,7 +25,7 @@ class RoleAdmissionJournal(list):
         super().__init__();self.directory=Path(directory)
     def append(self,record):
         import re
-        if record.get('role') not in ('A','H') or not re.fullmatch(r'labweave-bw01-[0-9a-f]{32}\.scope',record.get('unit','')):
+        if record.get('role') not in ('A','H') or not re.fullmatch(r'bioduet-bw01-[0-9a-f]{32}\.scope',record.get('unit','')):
             raise ValueError('ROLE_ADMISSION_IDENTITY')
         save_new(self.directory/('role-'+record['role']+'-admission.json'),
                  {'role':record['role'],'unit':record['unit'],'state':'starting'})

@@ -1,19 +1,9 @@
-# Current native science implementation
+# Native implementation state
 
-The complete Source15 closure is integrated: 75 source files and 13 phase entries. The provenance/mainline-source15.json mapping records original paths, exact byte hashes and repository destinations.
+Source16 development sources are included in src/bioduet_vnext and scripts/. Evaluator/task-world dependencies are in src/bioduet_eval; five collector modules are explicitly packaged as top-level Python modules. Original extraction mappings remain historical provenance, not live source locations.
 
-Native service modules are in src/bioduet_vnext. Five concurrency collector modules retain their top-level import names and are explicitly packaged as Python modules. Evaluator dependencies stay in src/labweave_eval. Host, MCP, actor, provider and preparation scripts are under scripts/. All copied source bytes are preserved. Two evaluator files advance from the old release to the exact current Source15 versions; Git preserves their released versions.
+The current independent checkout has no import dependency on a second product repository. Native SDKs, R, model credentials, datasets and runtime configuration are external prerequisites and have not been installed/migrated by this separation.
 
-This is source integration with syntax and byte checks. It does not establish an installed package, a running project domain, a new Agent or model qualification, or a successful scientific episode. The original Source15 execution plan still points to its prepared server sources. Repository destinations have not silently replaced that execution binding.
+Prior engineering tests and model-authored small-code execution do not establish a complete autonomous scientific episode or full native-system qualification. Formal scientific results remain unavailable.
 
-SDK04 and the fixed R environment remain external dependencies. Accepted evidence is reused only for its exact scope. Private data, generated A/H analysis code and reasoning, credentials, protected runtime contents and dependency caches are excluded.
-
-The BioDuet project executor handles ordinary source changes with fresh pins and per-job authorization. Scientific fitting still requires the actual A-generated full code/dependency/options/input closure, a trusted S applicability decision, and immutable code/input mounts with current finite execution permission. Host configuration and trusted-service changes remain administrator responsibilities.
-
-Only TD01 is closed. New accepted scientific episodes are zero; formal and strict results remain null. All 60 tasks, 24 cards, both formal tracks, independent scientific and engineering reviews, a new release and actual fixed LabWeave consumption remain required.
-
-## Current Source16 update
-
-The current 75-source, 13-entry selection is recorded in provenance/mainline-source16.json and provenance/current-mainline.json. Seven files advance the gate and its import identities; all previous source versions remain preserved. The gate now rejects missing, null, empty, incorrectly typed or malformed binding digests before comparing values.
-
-M personally submitted the required source-and-binding audit through the BioDuet project entry. The actual job ran as UID/GID20020 with empty groups, checked both complete source selections, and passed 13 stdlib test methods (11 compatibility plus two new methods) with 47 recorded rejection subcases. All five declared evidence files were read and hashed; the service reported completed, exit0, integrity and cleanup verified. This establishes a pure-files engineering result, not a native ABI, trusted S issuer, model, R fit, scientific result or full authority handover. The latter still requires the dedicated operator boundary and appropriate role/service profiles.
+The previous per-change admission, applicability-publisher and handoff implementation is historical code, not the new implementation plan. Further functionality is paused pending discussion.

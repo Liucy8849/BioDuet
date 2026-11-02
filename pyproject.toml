@@ -20,4 +20,4 @@ py-modules = ["authorization_stage_recorder_v02", "host_evidence_journal_v04", "
 where = ["src"]
 
 [tool.setuptools.package-data]
-labweave_eval = ["*.R", "*.json"]
+bioduet_eval = ["*.R", "*.json"]

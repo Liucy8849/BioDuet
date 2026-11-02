@@ -1,9 +1,9 @@
 from importlib.resources import files
 import csv,gzip,hashlib,json,tempfile,unittest
 from pathlib import Path
-from labweave_eval.bw01_data_v01 import prepare,FILES,integer_count
-from labweave_eval.bw01_science_v01 import validate_design
-from labweave_eval.bw01_oracle_v01 import judge
+from bioduet_eval.bw01_data_v01 import prepare,FILES,integer_count
+from bioduet_eval.bw01_science_v01 import validate_design
+from bioduet_eval.bw01_oracle_v01 import judge
 def fixture(root):
     content={
      'genes':'g1\tGene1\ng2\tGene2\n',
@@ -83,11 +83,11 @@ class OracleTests(unittest.TestCase):
         receipt={'status':'succeeded','exit_code':0,'method_id':'bw01-paired-edger-ql/0.1',
                  'counts_sha256':'c'*64,'sample_version':2,'design_version':2,'edgeR_version':'test',
                  'design':{'sha256':sha(c/'design.tsv')},'result':{'sha256':sha(c/'de.tsv')}}
-        receipt['script']={'sha256':sha(files('labweave_eval').joinpath('bw01_edger_v01.R'))}
+        receipt['script']={'sha256':sha(files('bioduet_eval').joinpath('bw01_edger_v01.R'))}
         write_table(r/'truth-design.tsv',header,[[s[k] for k in header] for s in samples])
         (c/'execution.json').write_text(json.dumps(receipt))
         (r/'reference.json').write_text(json.dumps({'status':'succeeded','exit_code':0,'edgeR_version':'test',
-             'reference_script_sha256':sha(files('labweave_eval').joinpath('bw01_reference_v01.R')),
+             'reference_script_sha256':sha(files('bioduet_eval').joinpath('bw01_reference_v01.R')),
              'counts_sha256':'c'*64,'result':{'sha256':sha(r/'reference-de.tsv')}}))
         truth={'samples':samples,'counts':{'sha256':'c'*64}}
         state={'sample':{'condition':'stim','version':2},'design':{'version':2,'sample_version':2}}

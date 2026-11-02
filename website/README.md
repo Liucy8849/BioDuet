@@ -1,6 +1,6 @@
 # BioDuet website
 
-Independent read-only research website. Vue 3 + TypeScript + Vite, static versioned JSON, no backend or database. This directory is independent of LabWeave deployment and services.
+Independent read-only research website. Vue 3 + TypeScript + Vite, static versioned JSON, no backend or database. This directory has its own source and deployment configuration.
 
 ## Local development
 
@@ -43,6 +43,6 @@ This must refuse the bundled demonstration. Only an `audience=public`, `status=a
 
 Serve the **built dist directory only**, never the repository, source tree or Vite dev server. Hash routing works under a subdirectory. The site has no API endpoints and never executes model-generated HTML. Artifact tables and reports render text through Vue's escaping. Approved PNG previews use bounded data URLs validated by the release schema; SVG and HTML execution are not supported. Artifact SHA-256 covers the canonical rows JSON, literal report text, or complete PNG data-URL string respectively, independently of any original scientific source checksum. CSV formula-like values are quoted and prefixed. Real hosting, domain, HTTPS and rollback destination remain deployment-specific and are not configured by running a local preview.
 
-Recommended production headers are in `deploy/headers.conf.example`. Set `index.html` and `release.json` to `no-cache`; immutable content-addressed assets may be cached. Keep old versioned releases addressable or explicitly withdrawn. Publish to a new version directory and atomically switch the host's serving pointer; roll back to the last verified directory. Do not overwrite or restart existing LabWeave services.
+Recommended production headers are in `deploy/headers.conf.example`. Set `index.html` and `release.json` to `no-cache`; immutable content-addressed assets may be cached. Keep old versioned releases addressable or explicitly withdrawn. Publish to a new version directory and atomically switch the host's serving pointer; roll back to the last verified directory. Do not overwrite or restart unrelated services.
 
 No formal leaderboard is enabled. Formal aggregate statistics and scientific results remain a separate R4 release requirement.

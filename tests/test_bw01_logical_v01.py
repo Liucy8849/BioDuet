@@ -1,6 +1,6 @@
 import json
 import unittest
-from labweave_eval.bw01_logical_v01 import Bw01EngineeringWorld, LogicalSession, safe_copy
+from bioduet_eval.bw01_logical_v01 import Bw01EngineeringWorld, LogicalSession, safe_copy
 
 
 def action(action_id, op, payload):

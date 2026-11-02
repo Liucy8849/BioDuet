@@ -1,6 +1,6 @@
 """Trusted engineering controller. No live claim without external transport receipts."""
 import hashlib,json
-from labweave_eval.bw01_logical_v01 import LogicalSession,Bw01EngineeringWorld
+from bioduet_eval.bw01_logical_v01 import LogicalSession,Bw01EngineeringWorld
 PROFILE='bw01-participant-science-human-envelope/0.2'
 def digest(value):
     return hashlib.sha256(json.dumps(value,sort_keys=True,separators=(',',':')).encode()).hexdigest()

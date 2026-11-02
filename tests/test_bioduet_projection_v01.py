@@ -7,9 +7,9 @@ from pathlib import Path
 import tempfile
 import unittest
 from unittest.mock import patch
-from labweave_eval.bw01_science_world_v02 import Bw01ScienceWorld
-from labweave_eval.bioduet_bw01_projection_v01 import project
-from labweave_eval.bw01_evaluation_v01 import pair
+from bioduet_eval.bw01_science_world_v02 import Bw01ScienceWorld
+from bioduet_eval.bioduet_bw01_projection_v01 import project
+from bioduet_eval.bw01_evaluation_v01 import pair
 
 
 class ProjectionTests(unittest.TestCase):
@@ -111,7 +111,7 @@ class ProjectionTests(unittest.TestCase):
         a={'condition':'H0','pair_id':'p','instance_id':'0','summary_sha256':'0'*64,
            'comparison_contract_sha256':'a'*64}
         b=dict(a,condition='H1',instance_id='1',summary_sha256='1'*64)
-        with patch('labweave_eval.bw01_evaluation_v01.evaluate',
+        with patch('bioduet_eval.bw01_evaluation_v01.evaluate',
                    side_effect=[{'observed_comparison_fields':{'max_calls':30}},
                                 {'observed_comparison_fields':{'max_calls':31}}]):
             result=pair(a,{},b,{})
@@ -123,7 +123,7 @@ class ProjectionTests(unittest.TestCase):
         a={'condition':'H0','pair_id':'p','instance_id':'0','summary_sha256':'0'*64,
            'comparison_contract_sha256':'a'*64}
         b=dict(a,condition='H1',instance_id='1')
-        with patch('labweave_eval.bw01_evaluation_v01.evaluate',
+        with patch('bioduet_eval.bw01_evaluation_v01.evaluate',
                    return_value={'observed_comparison_fields':{'max_calls':30}}):
             result=pair(a,{},b,{})
         self.assertFalse(result['pair_comparable'])

@@ -1,6 +1,6 @@
 import copy, hashlib, json, tempfile, unittest
 from pathlib import Path
-from labweave_eval.bw01_protocol_diagnostic_v01 import assess, diagnose
+from bioduet_eval.bw01_protocol_diagnostic_v01 import assess, diagnose
 
 def report(h_reason=None, a_reason=None, h_action="A02"):
     rows=[]

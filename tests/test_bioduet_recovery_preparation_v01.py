@@ -1,7 +1,7 @@
 """New pure preparation guards; no analysis or world actions."""
 import copy
 import unittest
-from labweave_eval.bioduet_recovery_preparation_v01 import prepare
+from bioduet_eval.bioduet_recovery_preparation_v01 import prepare
 
 
 class RecoveryPreparationTests(unittest.TestCase):

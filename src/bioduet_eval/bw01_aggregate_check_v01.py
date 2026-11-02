@@ -1,7 +1,7 @@
 """Independent raw-count qualification; never exposed as a participant tool."""
 import argparse,csv,json,os,signal,subprocess,time
 from pathlib import Path
-from labweave_eval.bw01_reference_runner_v01 import digest
+from bioduet_eval.bw01_reference_runner_v01 import digest
 
 def verify_receipt(path,public_directory,truth_path):
     path=Path(path);record=json.loads(path.read_text())

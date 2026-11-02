@@ -57,5 +57,5 @@ def score_with_facets(root,plan_path,plan_sha256,facets,*,score_plan):
 
 def accepted_score_plan(*args):
     # Actual host consumer; standalone release must package this accepted module before publication.
-    from labweave_eval.bioduet_task_scoreboard_v01 import score_plan
+    from bioduet_eval.bioduet_task_scoreboard_v01 import score_plan
     return score_plan(*args)

@@ -12,7 +12,7 @@ from pathlib import Path
 import stat
 import time
 
-PROJECT = Path('/data1/Liuchenyu/labweave/project')
+PROJECT = Path(__file__).resolve().parents[2]
 SCHEMA = 'bioduet-finite-window/1'
 PHASES = {'prehistory', 'reference', 'native-fake', 'native-live'}
 FIELDS = {'schema','kind','grant_id','issued_epoch','expires_epoch','window_root',

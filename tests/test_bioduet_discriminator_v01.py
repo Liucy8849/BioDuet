@@ -4,10 +4,10 @@ import os
 from pathlib import Path
 import tempfile
 import unittest
-from labweave_eval.bw01_world_port_v01 import BrokeredScienceWorld, ScienceWorldPort
-from labweave_eval.bw01_logical_v01 import LogicalSession
-from labweave_eval.bioduet_mcp_v01 import McpWorldFacade
-from labweave_eval.contract import Rejection
+from bioduet_eval.bw01_world_port_v01 import BrokeredScienceWorld, ScienceWorldPort
+from bioduet_eval.bw01_logical_v01 import LogicalSession
+from bioduet_eval.bioduet_mcp_v01 import McpWorldFacade
+from bioduet_eval.contract import Rejection
 
 
 class FakeWorld:

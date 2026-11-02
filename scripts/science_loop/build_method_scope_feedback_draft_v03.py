@@ -22,7 +22,7 @@ def main():
     criterion=sr["criterion_references"];check(type(criterion) is list and all(type(x) is str and x.startswith("BW01.") for x in criterion),"PUBLIC_CRITERION_IDENTIFIERS")
     feedback={"schema":"bioduet-root-scientific-code-scope-feedback/1","actor_scope":p["actor_scope"],"actual_S_scope_check_ref":p["S_scope_check_actor_readonly_ref"],"reported_verdict":sr["verdict"],"code_bundle_sha256":sr["code_bundle_sha256"],"intake_sha256":sr["intake_sha256"],"scientific_execution_authorized":False,"actor_message":"Author applicability check: "+sr["verdict"]+". "+reason+" Criteria: "+", ".join(criterion),"source_kind":"operator_author_scope_feedback_not_H_or_independent_science","root_protected_publication_required":True}
     check(p["S_scope_check_actor_readonly_ref"]["bytes"]==p["actual_S_scope_check_ref"]["bytes"] and p["S_scope_check_actor_readonly_ref"]["sha256"]==p["actual_S_scope_check_ref"]["sha256"],"EXACT_SOURCE_COPY_ALIAS")
-    out=Path(p["fresh_P_feedback_draft_path"]);check(out.is_relative_to('/data1/Liuchenyu/labweave/project') and not out.exists(),"FRESH_P_OWNED_DRAFT")
+    out=Path(p["fresh_P_feedback_draft_path"]);check(out.is_relative_to(Path(__file__).resolve().parents[2]) and not out.exists(),"FRESH_P_OWNED_DRAFT")
     b=encode(feedback)+b"\n";fd=os.open(out,os.O_WRONLY|os.O_CREAT|os.O_EXCL|os.O_NOFOLLOW,0o444)
     with os.fdopen(fd,"wb") as f:f.write(b);f.flush();os.fchmod(f.fileno(),0o444);os.fsync(f.fileno())
     print(json.dumps({"schema":"bioduet-method-scope-feedback-draft-observation/1","draft_path":str(out),"bytes":len(b),"sha256":digest(b),"execution_authorized":False,"Root_must_protect_copy_and_publish_current_pointer_before_Actor_read":True,"model_called_or_R_executed":False}))

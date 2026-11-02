@@ -3,10 +3,10 @@ One World, one issued-context registry. The changed analysis actions are never
 labelled with the legacy fixed-reference-run envelope/version.
 """
 from copy import deepcopy
-from labweave_eval.bioduet_world_port_v02 import ScienceWorldPort,BrokeredScienceWorld
-from labweave_eval.world_port import ActionBroker
-from labweave_eval.contract import Rejection
-from labweave_eval.bw01_logical_v01 import safe_copy
+from bioduet_eval.bioduet_world_port_v02 import ScienceWorldPort,BrokeredScienceWorld
+from bioduet_eval.world_port import ActionBroker
+from bioduet_eval.contract import Rejection
+from bioduet_eval.bw01_logical_v01 import safe_copy
 from .native_science_world_v03 import PROFILE
 from .contracts_v01 import require
 CONTRACT="bioduet-native-artifact-world-port/1"

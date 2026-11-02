@@ -8,3 +8,9 @@ node_modules/
 website/dist/
 test-results/
 playwright-report/
+
+.local/
+data/
+runtime/
+.env
+.env.*

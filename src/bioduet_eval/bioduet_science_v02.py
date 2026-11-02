@@ -1,8 +1,9 @@
 """Trusted bounded scientific tool adapter; no automatic environment install."""
 import csv,json,os,signal,subprocess,time
 from pathlib import Path
-from labweave_eval.bw01_artifacts_v01 import save_new,file_ref
-from labweave_eval.bw01_data_v01 import sha256,METHOD
+from bioduet_eval.bw01_artifacts_v01 import save_new,file_ref
+from bioduet_eval.bw01_data_v01 import sha256,METHOD
+from .bioduet_process_cleanup_v01 import close_group
 
 def validate_design(dataset,rows):
     if type(rows) is not list or len(rows)!=len(dataset['samples']):raise ValueError('DESIGN_SIZE')
@@ -27,7 +28,7 @@ def write_design(path,rows):
         writer.writeheader();writer.writerows(rows)
 
 def execute(public_directory,rows,output,*,rscript,edgeR_version,sample_version,
-            design_version,wall_seconds=180,library_directory=None):
+            design_version,wall_seconds=180,library_directory=None,cancel=None):
     if type(wall_seconds) is not int or not 1<=wall_seconds<=600:raise ValueError('WALL')
     if type(sample_version) is not int or sample_version<1 or type(design_version) is not int or design_version<1:
         raise ValueError('VERSIONS')
@@ -50,24 +51,31 @@ def execute(public_directory,rows,output,*,rscript,edgeR_version,sample_version,
     started=time.monotonic();process=None
     try:
         with (output/'stdout.log').open('xb') as stdout,(output/'stderr.log').open('xb') as stderr:
+            if cancel is not None and cancel.is_set():raise RuntimeError('CANCELLED_BEFORE_LAUNCH')
             process=subprocess.Popen([str(rscript),'--vanilla',str(script),str(counts),
                 str(output/'design.tsv'),str(output),edgeR_version],env=env,stdin=subprocess.DEVNULL,
                 stdout=stdout,stderr=stderr,start_new_session=True)
-            try:record['exit_code']=process.wait(timeout=wall_seconds)
-            except subprocess.TimeoutExpired:record['failure']='TIMEOUT'
+            record['launcher']={'pid':process.pid,'start_ticks':
+                Path('/proc/%s/stat'%process.pid).read_text().rsplit(')',1)[1].split()[19]}
+            end=time.monotonic()+wall_seconds
+            while process.poll() is None:
+                if cancel is not None and cancel.is_set():
+                    record['failure']='CANCELLED';break
+                if time.monotonic()>=end:
+                    record['failure']='TIMEOUT';break
+                time.sleep(min(0.05,max(0,end-time.monotonic())))
+            if record['failure'] is None:record['exit_code']=process.wait(timeout=1)
         if record.get('exit_code')==0:
             record['result']=file_ref(output/'de.tsv');record['environment']=file_ref(output/'execution.tsv')
-            from labweave_eval.bw01_result_view_v01 import summarize
+            from bioduet_eval.bw01_result_view_v01 import summarize
             record['preview']=summarize(output,dataset,public_directory)
             record['status']='succeeded'
         elif record['failure'] is None:record['failure']='ANALYSIS_PROCESS_FAILED'
     except Exception as exc:record['failure']=type(exc).__name__
     finally:
-        if process is not None:
-            try:os.killpg(process.pid,signal.SIGKILL)
-            except ProcessLookupError:pass
-            try:process.wait(timeout=5)
-            except subprocess.TimeoutExpired:record['status']='failed';record['failure']='CLEANUP_UNCONFIRMED'
+        record['cleanup']=close_group(process)
+        if not record['cleanup']['confirmed']:
+            record['status']='failed';record['failure']='CLEANUP_UNCONFIRMED'
         record['elapsed_seconds']=time.monotonic()-started
         save_new(output/'execution.json',record)
     return record

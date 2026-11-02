@@ -8,7 +8,7 @@ from array import array
 from collections import Counter
 from decimal import Decimal
 from pathlib import Path
-from labweave_eval.bw01_artifacts_v01 import save_new,file_ref
+from bioduet_eval.bw01_artifacts_v01 import save_new,file_ref
 
 FILES={'genes':'GSE96583_batch2.genes.tsv.gz','metadata':'GSE96583_batch2.total.tsne.df.tsv.gz',
        'ctrl_barcodes':'GSM2560248_barcodes.tsv.gz','stim_barcodes':'GSM2560249_barcodes.tsv.gz',

@@ -1,16 +1,7 @@
-# Operator adapter boundary
+# Adapter boundary
 
-BioDuet core owns role projections, decisions, state transitions, evidence formats,
-and scoring contracts. Operators own process isolation, credential delegation,
-resource admission, external model/R/native execution and exact cleanup.
+BioDuet owns task specifications, participant-facing views, task transitions and scientific evaluation. An external application or common scientific platform is accessed through its documented API/adapter rather than imported source or a shared writable database.
 
-The integrity helpers were extracted from the accepted window module with their
-function bodies unchanged: canonical encoding remains ASCII escaped, sorted,
-compact JSON with nonfinite values rejected. File pins, duplicate-key rejection,
-exclusive append-only output and identity checks remain intact. The original
-LabWeave window module and its scope policy are untouched.
+This repository does not contain or require a second full scientific-platform frontend, backend or database. The score website is a benchmark website, not that platform.
 
-LabWeave should reference a published tag plus commit and artifact SHA256 in its
-own adapter configuration. No floating main dependency, no shared deployment
-paths, and no transfer of private truth or raw trajectories into this repository.
-Release pin values are pending successful standalone validation and publication.
+The common-platform integration boundary has not been redesigned or implemented in this separation. Existing process/native utilities are development sources and are not a requirement to reproduce the earlier host-control workflow.

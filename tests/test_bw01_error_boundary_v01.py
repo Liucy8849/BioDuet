@@ -1,7 +1,7 @@
 """Targeted Root-requested exception-boundary regression, no model or DB."""
 import json
 import unittest
-from labweave_eval.bw01_logical_v01 import Bw01EngineeringWorld, LogicalSession
+from bioduet_eval.bw01_logical_v01 import Bw01EngineeringWorld, LogicalSession
 
 SECRET = 'PRIVATE-SENTINEL-NOT-A-REAL-SECRET'
 ACTION = {'kind': 'action', 'request': {'action_id': 'A01'}}

@@ -1,11 +1,11 @@
 import json,tempfile,unittest
 from pathlib import Path
-from labweave_eval.bw01_artifacts_v01 import RoleAdmissionJournal
+from bioduet_eval.bw01_artifacts_v01 import RoleAdmissionJournal
 class AdmissionJournalTests(unittest.TestCase):
     def test_exact_units_durable_before_start(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);journal=RoleAdmissionJournal(root)
-            record={'role':'A','unit':'labweave-bw01-'+'a'*32+'.scope','state':'starting'}
+            record={'role':'A','unit':'bioduet-bw01-'+'a'*32+'.scope','state':'starting'}
             journal.append(record)
             self.assertEqual(json.loads((root/'role-A-admission.json').read_text()),record)
             record['state']='ready'

@@ -10,9 +10,9 @@ from bioduet_vnext.native_science_world_v03 import NativeArtifactRecoveryWorld,P
 from bioduet_vnext.native_artifact_world_port_v01 import BrokeredNativeArtifactWorld,CONTRACT
 from bioduet_vnext.native_artifact_snapshots_v01 import ScopedNativeArtifactSnapshots
 from bioduet_vnext.logical_study_endpoint_v06 import LogicalStudyEndpoint
-from labweave_eval.bioduet_logical_v02 import LogicalSession
-from labweave_eval.bioduet_world_port_v02 import ScienceWorldPort
-from labweave_eval.contract import Rejection
+from bioduet_eval.bioduet_logical_v02 import LogicalSession
+from bioduet_eval.bioduet_world_port_v02 import ScienceWorldPort
+from bioduet_eval.contract import Rejection
 class NativeScienceProfileChecks(unittest.TestCase):
     def setUp(self):
         self.tmp=tempfile.TemporaryDirectory(dir=Path.cwd());self.root=Path(self.tmp.name)

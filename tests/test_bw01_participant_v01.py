@@ -1,12 +1,12 @@
 import json,unittest
 from copy import deepcopy
-from labweave_eval.bw01_logical_v01 import LogicalSession,Bw01EngineeringWorld
-from labweave_eval.bw01_participant_v01 import ReferenceParticipant,LocalRole,decode,ProtocolError
-from labweave_eval.bw01_episode_v01 import run_episode
+from bioduet_eval.bw01_logical_v01 import LogicalSession,Bw01EngineeringWorld
+from bioduet_eval.bw01_participant_v01 import ReferenceParticipant,LocalRole,decode,ProtocolError
+from bioduet_eval.bw01_episode_v01 import run_episode
 def response(decision):
     return {'model':'deepseek-flash','id':'fake-regression','usage':{'total_tokens':0},
             'choices':[{'message':{'content':json.dumps(decision)}}]}
-from labweave_eval.bw01_fixtures_v01 import scripted_response as fake
+from bioduet_eval.bw01_fixtures_v01 import scripted_response as fake
 class Tests(unittest.TestCase):
     def test_separate_history_and_projection(self):
         world=Bw01EngineeringWorld()

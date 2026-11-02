@@ -2,9 +2,9 @@
 from copy import deepcopy
 import json
 from pathlib import Path
-from labweave_eval.bw01_logical_v01 import Bw01EngineeringWorld,safe_copy
-from labweave_eval.bw01_science_v01 import execute
-from labweave_eval.bw01_data_v01 import METHOD
+from bioduet_eval.bw01_logical_v01 import Bw01EngineeringWorld,safe_copy
+from bioduet_eval.bw01_science_v01 import execute
+from bioduet_eval.bw01_data_v01 import METHOD
 
 SOURCE_REVISION='bw01-science-world/0.2-lineage'
 PROFILE='bw01-interaction-science-development/0.1'
@@ -98,7 +98,7 @@ class Bw01ScienceWorld(Bw01EngineeringWorld):
             run=self.runs[payload['run_id']]
             if action=='A12':
                 # Explicitly mechanical. Oracle is never reachable from this tool.
-                from labweave_eval.bw01_data_v01 import sha256
+                from bioduet_eval.bw01_data_v01 import sha256
                 path=Path(run['directory'])/'de.tsv'
                 valid=bool(run['status']=='succeeded' and path.is_file() and sha256(path)==run['result']['sha256'])
                 self.verifications[run['run_id']]={'bytes_valid':valid,'scientific_validity':'not_assessed'}

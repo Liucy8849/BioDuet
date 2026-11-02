@@ -4,7 +4,7 @@ Historical public R paths are SOURCE ONLY. Original source bytes stay unchanged.
 """
 import argparse,json,os,stat,hashlib
 from pathlib import Path
-P=Path("/data1/Liuchenyu/labweave/project")
+P=Path(__file__).resolve().parents[2]
 def load_pin(row):
     p=Path(row["path"]);fd=os.open(p,os.O_RDONLY|os.O_NOFOLLOW|os.O_NONBLOCK)
     try:

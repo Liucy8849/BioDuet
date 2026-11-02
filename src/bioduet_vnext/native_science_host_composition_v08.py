@@ -13,8 +13,8 @@ from .native_artifact_snapshots_v01 import ScopedNativeArtifactSnapshots
 from .native_science_world_v03 import NativeArtifactRecoveryWorld,PROFILE
 from .native_artifact_world_port_v01 import BrokeredNativeArtifactWorld,CONTRACT
 from .logical_study_endpoint_v06 import LogicalStudyEndpoint
-from labweave_eval.bioduet_logical_v02 import LogicalSession
-from labweave_eval.bioduet_recovery_world_v02 import sha as original_World_request_sha
+from bioduet_eval.bioduet_logical_v02 import LogicalSession
+from bioduet_eval.bioduet_recovery_world_v02 import sha as original_World_request_sha
 from .participant_observer_v04 import request_sha256
 from scientific_episode_capture_v02 import EpisodeCapture
 from scientific_world_observation_v03 import ObservedScienceWorld,ObservedLogicalSession

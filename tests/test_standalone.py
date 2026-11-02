@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 from bioduet.runner import run, fixture
-from labweave_eval.bioduet_integrity_v01 import strict, sha
+from bioduet_eval.bioduet_integrity_v01 import strict, sha
 
 class StandaloneTests(unittest.TestCase):
     def test_both_conditions_and_failure_retention(self):

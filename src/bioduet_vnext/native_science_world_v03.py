@@ -6,9 +6,9 @@ and method claims stay unverified until independent evidence actually joins.
 from copy import deepcopy
 from pathlib import Path
 import json
-from labweave_eval.bioduet_recovery_world_v02 import RecoveryWorld as ExistingRecoveryWorld
-from labweave_eval.bw01_logical_v01 import safe_copy
-from labweave_eval.bioduet_window_v01 import sha
+from bioduet_eval.bioduet_recovery_world_v02 import RecoveryWorld as ExistingRecoveryWorld
+from bioduet_eval.bw01_logical_v01 import safe_copy
+from bioduet_eval.bioduet_window_v01 import sha
 from .contracts_v01 import require
 
 PROFILE="bioduet-native-artifact-recovery-world/1"

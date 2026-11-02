@@ -159,7 +159,7 @@ def adjudicate_reviews(packet,reviews,adjudication,*,verify_assessor,verify_adju
 
 def assess_pinned_review_packet(packet,reviews,*,registry,verify_assessor,adjudication=None,verify_adjudicator=None):
     """Actual accepted scorer consumes resolved whole-text review, not a stub."""
-    from labweave_eval.bioduet_task_assessment_v01 import assess_objects
+    from bioduet_eval.bioduet_task_assessment_v01 import assess_objects
     require(digest(encoded(registry))==packet["registry_canonical_sha256"],"REVIEW_REGISTRY_CONTENT")
     review=(resolve_reviews(packet,reviews,verify_assessor=verify_assessor) if adjudication is None else
             adjudicate_reviews(packet,reviews,adjudication,verify_assessor=verify_assessor,verify_adjudicator=verify_adjudicator))

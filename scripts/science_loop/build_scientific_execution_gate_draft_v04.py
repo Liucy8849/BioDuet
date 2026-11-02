@@ -26,7 +26,7 @@ def build(proof):
     for key,ref in [("dependency_manifest_sha256",intake["code_bundle"]["transitive_dependency_manifest_ref"]),("settings_sha256",intake["declared_settings_ref"]),("invocation_sha256",intake["actual_invocation_ref"])]:
         pinned(ref,True);check(sr[key]==ref["sha256"],"EXACT_DEPENDENCY_OPTIONS_INVOCATION_SHA")
     check(sr["code_bundle_sha256"]==intake["code_bundle"]["sha256"],"S_CODE_BUNDLE_SHA")
-    root=Path(proof["fresh_P_stage_root"]).resolve();P=Path('/data1/Liuchenyu/labweave/project');check(root.is_relative_to(P) and not root.exists(),"FRESH_P_ONLY_STAGE");root.mkdir(mode=0o700)
+    root=Path(proof["fresh_P_stage_root"]).resolve();P=Path(__file__).resolve().parents[2];check(root.is_relative_to(P) and not root.exists(),"FRESH_P_ONLY_STAGE");root.mkdir(mode=0o700)
     refs=[];source_rows=[];total=0;actor_aliases=set()
     for section in ["code_files","actual_input_files"]:
         for index,row in enumerate(proof[section]):

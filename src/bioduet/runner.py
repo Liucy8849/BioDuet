@@ -3,8 +3,8 @@ import json
 import time
 import traceback
 from pathlib import Path
-from labweave_eval.bioduet_logical_v02 import LogicalSession, Bw01EngineeringWorld
-from labweave_eval.bw01_fixtures_v01 import scripted_response
+from bioduet_eval.bioduet_logical_v02 import LogicalSession, Bw01EngineeringWorld
+from bioduet_eval.bw01_fixtures_v01 import scripted_response
 
 def fixture(packet):
     """Explicit synthetic participant; never a model or independent scientist."""

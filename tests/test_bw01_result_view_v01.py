@@ -1,8 +1,8 @@
 import csv,json,tempfile,unittest
 from pathlib import Path
 from test_bw01_science_v01 import fixture,write_table
-from labweave_eval.bw01_data_v01 import prepare
-from labweave_eval.bw01_result_view_v01 import summarize
+from bioduet_eval.bw01_data_v01 import prepare
+from bioduet_eval.bw01_result_view_v01 import summarize
 class ResultViewTests(unittest.TestCase):
     def test_actual_values_and_annotations(self):
         with tempfile.TemporaryDirectory() as tmp:
